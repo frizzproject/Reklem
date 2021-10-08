@@ -8,7 +8,7 @@
     /* tepography */
     --h1-size: 3.6rem;
     --h2-size: 2.4rem;
-    --h2-size: 1.4rem;
+    --h3-size: 1.4rem;
     --text-normal-size: 1.4rem;
     --text-lite-size: 1.2rem;
     --menu-size: 1.4rem;
@@ -24,10 +24,11 @@
     /* orange */
     --grey-one: hsl(0, 0%, 90%);
     --grey-two: hsl(0, 0%, 95%);
-    --grey-three: #B3B3B3;
+    --grey-three: hsl(0, 0%, 70%);
     /* transition */
     --transition: all .2s ease 0s;
 }
 
 /* Blocks */
 @import "blocks/header.scss";
+@import "blocks/footer.scss";

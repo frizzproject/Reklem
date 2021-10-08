@@ -1,9 +1,10 @@
 *,
-*::before, *::after {
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-html, 
+html,
 body {
     overflow-x: hidden;
     font-size: 10px;
@@ -13,11 +14,13 @@ body {
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -29,6 +32,9 @@ body {
 
 main {
     flex: 1 1 auto;
+    // ------------- for del -------------
+    text-align: center;
+    padding: 100px 0;
 }
 
 footer {
@@ -39,7 +45,16 @@ a {
     color: inherit;
 }
 
-ul, li, p, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -51,20 +66,56 @@ button {
     border: none;
     padding: 0;
     cursor: pointer;
+
+    &:disabled {
+        opacity: 0.7;
+    }
 }
 
+// ----- buttons -----
 
+.btn__samll {
+    width: 4rem;
+    height: 4rem;
 
+    background: #ffffff;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 1em;
+    transition: var(--transition);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover svg path {
+        fill: var(--green-two);
+    }
+
+    &:hover {
+        color: var(--green-two);
+        box-shadow: none;
+    }
+
+    &:active, &:focus {
+        box-shadow: inset 7px 7px 10px -6px rgba(0, 0, 0, 0.25);
+    }
+}
 
 .logo__img {
     object-fit: cover;
     object-position: center;
 }
+
 .search__icon {
     width: 100%;
     height: 100%;
 }
+
 .burger__icon {
     width: 100%;
     height: 100%;
+}
+
+svg path {
+    transition: var(--transition);
 }

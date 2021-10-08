@@ -52,7 +52,7 @@
 
         font-style: normal;
         font-weight: 500;
-        font-size: var(--text-normal-size);
+        font-size: var(--menu-size);
 
         &:hover {
             color: var(--green-one);
@@ -65,16 +65,16 @@
     margin-left: 5rem;
 
     &-item {
-        width: 4rem;
-        height: 4rem;
+        // width: 4rem;
+        // height: 4rem;
 
-        background: #ffffff;
-        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
-        border-radius: 1em;
+        // background: #ffffff;
+        // box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+        // border-radius: 1em;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         margin: 0 14px;
 
         &:first-child {
