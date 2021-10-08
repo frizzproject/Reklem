@@ -10,12 +10,12 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger");
-const uglify = require("gulp-uglify");
 const uglifyEs = require("gulp-uglify-es").default;
 const plumber = require("gulp-plumber");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const panini = require("panini");
+const fileInclude = require("gulp-file-include");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browsersync = require("browser-sync").create();
@@ -55,7 +55,8 @@ function browserSync(done) {
         server: {
             baseDir: "./dist/"
         },
-        port: 3000
+        port: 3000,
+        notify: false
     });
 }
 
@@ -74,6 +75,7 @@ function html() {
             helpers: 'src/tpl/helpers/',
             data: 'src/tpl/data/'
         }))
+        .pipe(fileInclude())
         .pipe(dest(path.build.html))
         .pipe(browsersync.stream());
 }

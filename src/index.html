@@ -1,6 +1,57 @@
 ---
 layout: default
-title: HomePage
+title: Reklem
 ---
 
-<h1 style="text-align:center">HomePage {{ data.project }}</h1>
+<header class="header">
+    <div class="container">
+        <div class="header__wrap">
+            <div class="header__wrap-logo">
+                <a href="/">
+                    <img class="logo__img" src="{{root}}assets/img/svg/logo.svg" alt="Reklem">
+                </a>
+            </div>
+            <nav class="header__wrap-nav">
+                <div class="menu__nav">
+                    <button type="button" class="menu__nav-burger">
+                        <img class="burger__icon" src="{{root}}assets/img/svg/burger.svg" alt="menu">
+                    </button>
+                    <div class="menu__nav-list">
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#">О компании</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#">Акции</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#">Услуги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__item-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="menu__nav-search">
+                        <img class="search__icon" src="{{root}}assets/img/svg/search.svg" alt="menu">
+                    </button>
+                </div>
+                <div class="control__nav">
+                    <button type="button" class="control__nav-item control__profile">
+                        <img class="profile__icon" src="./assets/img/svg/profile.svg" alt="icon">
+                    </button>
+                    <button type="button" class="control__nav-item control__cart">
+                        <img class="cart__icon" src="./assets/img/svg/cart.svg" alt="icon">
+                    </button>
+                    <button type="button"  class="control__nav-item control__construct">
+                        <span>Конструктор</span>
+                        <img class="construct__icon" src="./assets/img/svg/constructor.svg" alt="icon">
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

@@ -1,3 +1,3 @@
-# Gulp web - start build for web development
+# Reklem - online shop 
 **Descript:**
-* gulp + webpack-stream + panini 
+*  Description for Reklem...
