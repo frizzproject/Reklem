@@ -26,14 +26,14 @@
     --grey-two: hsl(0, 0%, 95%);
     --grey-three: hsl(0, 0%, 70%);
     /* transition */
-    --transition: all .2s ease 0s;
+    --transition: all 0.2s ease 0s;
 
     /* params */
     --header-h: 8rem;
 }
 
- /* MEDIA <= 580px */
- @media only screen and (max-width: 580px) {
+/* MEDIA <= 580px */
+@media only screen and (max-width: 580px) {
     :root {
         /* tepography */
         --h1-size: 2rem;
@@ -43,7 +43,15 @@
         --text-lite-size: 1.2rem;
         --menu-size: 1.2rem;
     }
- }
+}
+
+/* MEDIA <= 480px */
+@media only screen and (max-width: 480px) {
+    :root {
+        /* params */
+        --header-h: 6rem;
+    }
+}
 
 /* Blocks */
 @import "blocks/header.scss";

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="header__wrap">
             <!-- logo -->
-            <div class="header__wrap-logo">
+            <div class="header__wrap-logo logo">
                 <a href="/">
                     <img class="logo__img" src="{{root}}assets/img/svg/logo.svg" alt="Reklem">
                 </a>
@@ -12,11 +12,23 @@
             <!-- navigation -->
             <nav class="header__wrap-nav">
 
+                <button type="button" class="menu__nav-burger">
+                    <svg class="burger__icon" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.75 6C15.75 5.58579 15.4142 5.25 15 5.25H1C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75H15C15.4142 6.75 15.75 6.41421 15.75 6Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.75 1C15.75 0.585786 15.4142 0.25 15 0.25H1C0.585786 0.25 0.25 0.585786 0.25 1C0.25 1.41421 0.585786 1.75 1 1.75H15C15.4142 1.75 15.75 1.41421 15.75 1Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.75 11C15.75 10.5858 15.4142 10.25 15 10.25H1C0.585786 10.25 0.25 10.5858 0.25 11C0.25 11.4142 0.585786 11.75 1 11.75H15C15.4142 11.75 15.75 11.4142 15.75 11Z"
+                            fill="black" />
+                    </svg>
+                </button>
+
                 <!-- menu -->
                 <div class="menu__nav">
-                    <button type="button" class="menu__nav-burger">
-                        <img class="burger__icon" src="{{root}}assets/img/svg/burger.svg" alt="menu">
-                    </button>
 
                     <!-- menu  -->
                     <div class="menu__nav-list">
@@ -136,12 +148,21 @@
 
                     <!-- sub search  -->
                     <div id="searchPopap" class="submenu__nav-list search__list">
+
                         <div class="submenu__nav-list-head">
+                            <button type="button" class="btn__samll nav__arrow _isHidden">
+                                <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6.26685 0.231231C6.5775 0.53954 6.5775 1.03941 6.26685 1.34772L2.5869 5L6.26685 8.65228C6.5775 8.96059 6.5775 9.46046 6.26685 9.76877C5.95621 10.0771 5.45256 10.0771 5.14191 9.76877L0.899487 5.55824C0.588843 5.24993 0.588843 4.75007 0.899487 4.44176L5.14191 0.231231C5.45256 -0.0770772 5.95621 -0.0770772 6.26685 0.231231Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
                             <form id="search" class="search__form" action="/" method="POST">
                                 <div class="search__form-field">
                                     <input id="searchInput" class="search__form-input" placeholder="Поиск" type="text"
                                         name="search">
-                                    <button type="submit" class="menu__nav-search">
+                                    <button type="submit" class="search__form-btn">
                                         <img class="search__icon" src="{{root}}assets/img/svg/search.svg" alt="menu">
                                     </button>
                                 </div>
@@ -156,13 +177,26 @@
                                 </svg>
                             </button>
                         </div>
+
                         <div class="submenu__nav-list-body">
-                            <!-- <ul class="search__results">
+                            <ul class="search__results">
 
                                 <li class="search__results-category">
                                     Услуги
 
                                     <ul class="search__results-category-list">
+                                        <li class="search__results-category-list-item">
+                                            <img src="{{root}}assets/img/grav-icon.png" alt="img">
+                                            <a href="#">Гравировка</a>
+                                        </li>
+                                        <li class="search__results-category-list-item">
+                                            <img src="{{root}}assets/img/grav-icon.png" alt="img">
+                                            <a href="#">Гравировка</a>
+                                        </li>
+                                        <li class="search__results-category-list-item">
+                                            <img src="{{root}}assets/img/grav-icon.png" alt="img">
+                                            <a href="#">Гравировка</a>
+                                        </li>
                                         <li class="search__results-category-list-item">
                                             <img src="{{root}}assets/img/grav-icon.png" alt="img">
                                             <a href="#">Гравировка</a>
@@ -182,11 +216,27 @@
                                             <img src="{{root}}assets/img/mug-icon.png" alt="img">
                                             <a href="#">Кружка с толстыми стенками</a>
                                         </li>
+                                        <li class="search__results-category-list-item">
+                                            <img src="{{root}}assets/img/mug-icon.png" alt="img">
+                                            <a href="#">Кружка с толстыми стенками</a>
+                                        </li>
+                                        <li class="search__results-category-list-item">
+                                            <img src="{{root}}assets/img/mug-icon.png" alt="img">
+                                            <a href="#">Кружка с толстыми стенками</a>
+                                        </li>
+                                        <li class="search__results-category-list-item">
+                                            <img src="{{root}}assets/img/mug-icon.png" alt="img">
+                                            <a href="#">Кружка с толстыми стенками</a>
+                                        </li>
+                                        <li class="search__results-category-list-item">
+                                            <img src="{{root}}assets/img/mug-icon.png" alt="img">
+                                            <a href="#">Кружка с толстыми стенками</a>
+                                        </li>
                                     </ul>
                                 </li>
 
-                            </ul> -->
-                            <div class="notfond__results">
+                            </ul>
+                            <div class="notfond__results _isHidden">
                                 <div class="notfond__results-icon">
                                     <img src="{{root}}assets/img/loupe-icon.png" alt="Search">
                                 </div>
@@ -196,15 +246,22 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <button type="button" class="menu__nav-search">
-                        <img class="search__icon" src="{{root}}assets/img/svg/search.svg" alt="menu">
-                    </button>
 
                 </div>
 
-                 <!-- control btns -->
+                <button type="button" class="menu__nav-search">
+                    <svg class="search__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.3851 12.4457C8.73488 14.5684 4.85544 14.4013 2.39866 11.9445C-0.237379 9.3085 -0.237379 5.03464 2.39866 2.3986C5.0347 -0.23744 9.30856 -0.23744 11.9446 2.3986C14.4014 4.85538 14.5685 8.73481 12.4458 11.3851L17.6014 16.5407C17.8943 16.8336 17.8943 17.3085 17.6014 17.6014C17.3085 17.8943 16.8337 17.8943 16.5408 17.6014L11.3851 12.4457ZM3.45932 10.8839C1.40907 8.83363 1.40907 5.50951 3.45932 3.45926C5.50957 1.40901 8.83369 1.40901 10.8839 3.45926C12.9327 5.50801 12.9342 8.82875 10.8885 10.8794C10.8869 10.8809 10.8854 10.8823 10.8839 10.8839C10.8824 10.8854 10.8809 10.8869 10.8794 10.8884C8.82882 12.9341 5.50807 12.9326 3.45932 10.8839Z"
+                            fill="black" />
+                    </svg>
+                </button>
+
+                <!-- control btns -->
                 <div class="control__nav">
                     <button type="button" class="btn__samll control__nav-item control__profile">
                         <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -226,6 +283,13 @@
                                 fill="black" />
                             <path
                                 d="M12.3346 14.6665C12.3346 13.9761 12.8943 13.4165 13.5846 13.4165C14.275 13.4165 14.8346 13.9761 14.8346 14.6665C14.8346 15.3569 14.275 15.9165 13.5846 15.9165C12.8943 15.9165 12.3346 15.3569 12.3346 14.6665Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <button type="button" class="btn__samll control__nav-item control__call">
+                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.84047 6.85635C4.62779 10.7482 7.80827 13.8424 11.762 15.519L11.7745 15.5243L12.5383 15.8647C13.511 16.2981 14.6542 15.9903 15.2778 15.1272L16.5522 13.3635C16.63 13.2558 16.6099 13.106 16.5065 13.0225L14.2818 11.2277C14.1712 11.1385 14.0085 11.1593 13.9239 11.2734L13.0581 12.4418C12.8478 12.7256 12.468 12.8242 12.1463 12.6786C9.18987 11.3406 6.81416 8.96491 5.47622 6.00851C5.33061 5.68674 5.42921 5.30699 5.71296 5.09671L6.88134 4.23085C6.9955 4.14625 7.01628 3.98362 6.92706 3.87302L5.13202 1.64798C5.04859 1.54456 4.89884 1.52448 4.79111 1.60225L3.01782 2.88241C2.14903 3.5096 1.84307 4.66244 2.28654 5.63789L2.83988 6.85505C2.84008 6.85549 2.84027 6.85592 2.84047 6.85635ZM11.1701 16.8973C6.8741 15.0737 3.41874 11.7107 1.4767 7.48094L1.47553 7.4784L0.921024 6.25868C0.181924 4.63293 0.691852 2.71152 2.13983 1.66621L3.91313 0.38605C4.66725 -0.158356 5.71548 -0.0177515 6.29947 0.706142L8.09451 2.93119C8.71907 3.70536 8.5736 4.84375 7.77444 5.43599L7.10494 5.93215C8.23585 8.12654 10.0282 9.91892 12.2226 11.0498L12.7188 10.3803C13.311 9.58117 14.4494 9.4357 15.2236 10.0603L17.4483 11.855C18.1724 12.4392 18.3129 13.4879 17.768 14.242L16.4936 16.0057C15.4543 17.4442 13.5489 17.9572 11.9279 17.2349L11.1701 16.8973Z"
                                 fill="black" />
                         </svg>
                     </button>
