@@ -27,7 +27,23 @@
     --grey-three: hsl(0, 0%, 70%);
     /* transition */
     --transition: all .2s ease 0s;
+
+    /* params */
+    --header-h: 8rem;
 }
+
+ /* MEDIA <= 580px */
+ @media only screen and (max-width: 580px) {
+    :root {
+        /* tepography */
+        --h1-size: 2rem;
+        --h2-size: 1.8rem;
+        --h3-size: 1.2rem;
+        --text-normal-size: 1.2rem;
+        --text-lite-size: 1.2rem;
+        --menu-size: 1.2rem;
+    }
+ }
 
 /* Blocks */
 @import "blocks/header.scss";

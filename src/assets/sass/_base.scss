@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+// *::-webkit-scrollbar {
+//     width: 3px;
+//     height: 50px;
+// }
+// *::-webkit-scrollbar-thumb {
+//     background: var(--green-one);
+//     border: 3px var(--green-one);
+//     border-radius: 3px;
+//     height: 50px;
+// }
+// *::-webkit-scrollbar-thumb:hover {
+//     background: var(--green-two);
+// }
+// *::-webkit-scrollbar-track {
+//     background: #ffffff;
+// }
+
 html,
 body {
     overflow-x: hidden;
@@ -62,10 +79,14 @@ a {
 }
 
 button {
+    cursor: pointer;
+}
+
+button, input {
     background: none;
     border: none;
     padding: 0;
-    cursor: pointer;
+    outline: none;
 
     &:disabled {
         opacity: 0.7;
@@ -96,7 +117,8 @@ button {
         box-shadow: none;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
         box-shadow: inset 7px 7px 10px -6px rgba(0, 0, 0, 0.25);
     }
 }

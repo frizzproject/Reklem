@@ -139,14 +139,14 @@ function js() {
 
 function images() {
     return src(path.src.images)
-        .pipe(imagemin(
-            // {
-            //     nterlaced: true,
-            //     progressive: true,
-            //     optimizationLevel: 3, // 0 to 7
-            //     svgoPlugins: [{ removeViewBox: false }],
-            // }
-        ))
+        // .pipe(imagemin(
+        //     {
+        //         nterlaced: true,
+        //         progressive: true,
+        //         optimizationLevel: 3, // 0 to 7
+        //         svgoPlugins: [{ removeViewBox: false }],
+        //     }
+        // ))
         .pipe(dest(path.build.images));
 }
 
