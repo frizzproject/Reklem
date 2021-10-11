@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: var(--green-one);
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -33,9 +37,6 @@ body {
 
 main {
     flex: 1 1 auto;
-    // ------------- for del -------------
-    text-align: center;
-    padding: 100px 0;
 }
 
 footer {
@@ -66,7 +67,8 @@ button {
     cursor: pointer;
 }
 
-button, input {
+button,
+input {
     background: none;
     border: none;
     padding: 0;
@@ -77,7 +79,69 @@ button, input {
     }
 }
 
+.underline-style {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.5rem;
+        background: var(--orange-one);
+        bottom: 0.4rem;
+        left: -0.5rem;
+        z-index: -1;
+
+        user-select: none;
+        pointer-events: none;
+
+        /* MEDIA <= 580px */
+        @media only screen and (max-width: 580px) {
+            left: -0.1rem;
+            bottom: 0;
+        }
+    }
+}
+
 // ----- buttons -----
+
+.main__btn {
+    display: inline-block;
+    color: #ffffff;
+ 
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    padding: 1.2rem 3rem;
+    border-radius: 1rem;
+
+    text-align: center;
+
+    background-color: var(--green-one);
+    box-shadow: 0px 9px 25px -4px rgba(72, 123, 108, 0.5);
+    transition: var(--transition);
+
+    &:hover {
+        background-color: var(--red-one);
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+    }
+
+    &:active, &:focus {
+        background-color: var(--red-two);
+        box-shadow: inset 4px 4px 10px -7px rgba(0, 0, 0, 0.25);
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    &:disabled {
+        background-color: var(--green-two);
+        color: var(--green-three);
+        box-shadow: none;
+    }
+}
+
 
 .btn__samll {
     width: 4rem;
@@ -104,6 +168,44 @@ button, input {
     &:active,
     &:focus {
         box-shadow: inset 7px 7px 10px -6px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.btn__large {
+    display: inline-block;
+    background: #ffffff;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 1em;
+    transition: var(--transition);
+
+    padding: 1.2rem 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        margin-right: 1rem;
+    }
+
+    &:hover svg path {
+        fill: var(--green-two);
+    }
+
+    &:hover {
+        color: var(--green-two);
+        box-shadow: none;
+    }
+
+    &:active,
+    &:focus {
+        box-shadow: inset 7px 7px 10px -6px rgba(0, 0, 0, 0.25);
+    }
+
+    &:disabled {
+        background-color: var(--green-two);
+        color: var(--green-three);
+        box-shadow: none;
     }
 }
 

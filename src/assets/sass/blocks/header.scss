@@ -132,6 +132,7 @@
     @media only screen and (max-width: 480px) {
         top: -100%;
 
+        visibility: hidden;
         min-height: calc(100vh - var(--header-h) - 80px);
         transform: translateY(calc(-100vh + 200px));
     }
@@ -736,6 +737,7 @@
 
 .menu__nav._isActive {
     background-color: #ffffff;
+    visibility: visible;
 }
 
 .submenu__nav-list-body._isActive {
