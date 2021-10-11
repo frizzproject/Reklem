@@ -32,7 +32,7 @@
     --header-h: 8rem;
 }
 
-/* MEDIA <= 580px */
+/* root: MEDIA <= 580px */
 @media only screen and (max-width: 580px) {
     :root {
         /* tepography */
@@ -45,7 +45,7 @@
     }
 }
 
-/* MEDIA <= 480px */
+/* root: MEDIA <= 480px */
 @media only screen and (max-width: 480px) {
     :root {
         /* params */
@@ -53,9 +53,15 @@
     }
 }
 
+/* Swiper */
+@import '../../../node_modules/swiper/swiper.scss';
+@import '../../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../../node_modules/swiper/modules/pagination/pagination.scss';
+
 /* Blocks */
 @import "blocks/header.scss";
 @import "blocks/footer.scss";
 @import "blocks/present-section.scss";
 @import "blocks/about-section.scss";
 @import "blocks/constructor-section.scss";
+@import "blocks/popular-new-section.scss";
