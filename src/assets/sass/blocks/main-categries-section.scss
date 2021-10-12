@@ -35,10 +35,6 @@
         margin-top: 10rem;
         max-width: 10rem;
 
-        &:hover {
-            box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.17);
-        }
-
         /* MEDIA <= 580px */
         @media only screen and (max-width: 580px) {
             margin-top: 4.4rem;

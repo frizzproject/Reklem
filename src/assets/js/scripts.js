@@ -3,9 +3,10 @@ import Swiper from "swiper/swiper-bundle";
 document.addEventListener("DOMContentLoaded", function () {
     /* init product sliders */
     initProductsSlider();
-
     /* init reviews sliders */
-    initReviewsSlider() 
+    initReviewsSlider() ;
+    /* navigation */
+    navigation();
 
 });
 
@@ -65,4 +66,73 @@ function initReviewsSlider() {
 
   });
   
+}
+
+/* navigation */
+function navigation() {
+  /* varibles */
+  const IS_ACTIVE = '_isActive';
+
+  const menuBtn = document.querySelector('.menu__nav-burger');
+  const closeBtns = document.querySelectorAll('.nav__close');
+  const searchBtn = document.querySelector('.menu__nav-search');
+
+  const nav = document.querySelector('.menu__nav');
+  const subMenu = document.querySelector('#submenuPopap');
+  const subSearch = document.querySelector('#searchPopap');
+
+  menuBtn.onclick = function() {
+    let mobileInterface = (document.documentElement.clientWidth) <= 960 ? true : false
+
+    if (!subMenu.classList.contains(IS_ACTIVE)) 
+    {
+      subMenu.classList.add(IS_ACTIVE)
+      document.documentElement.classList.add('_open')
+      // Для моильного интерфейса
+      if (mobileInterface) {
+        subSearch.classList.add(IS_ACTIVE)
+        subSearch.childNodes[1].classList.add(IS_ACTIVE)
+        nav.classList.add(IS_ACTIVE)
+
+        document.documentElement.classList.add('_scroll-ban')
+      }
+    } 
+    else 
+    {
+      subMenu.classList.remove(IS_ACTIVE)
+      document.documentElement.classList.remove('_open')
+      // Для моильного интерфейса
+      if (mobileInterface) {
+        subSearch.classList.remove(IS_ACTIVE)
+        subSearch.childNodes[1].classList.remove(IS_ACTIVE)
+        nav.classList.remove(IS_ACTIVE)
+
+        document.documentElement.classList.remove('_scroll-ban')
+      };
+    }
+  };
+
+  searchBtn.onclick = function(e) {
+    if (!subSearch.classList.contains(IS_ACTIVE)) {
+      subSearch.classList.add(IS_ACTIVE);
+      document.documentElement.classList.add('_open')
+      subSearch.childNodes[1].classList.add(IS_ACTIVE)
+      // Когда поиск выдает результат
+      subSearch.childNodes[3].classList.add(IS_ACTIVE)
+    }
+  };
+
+  closeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // menu
+      subMenu.classList.remove(IS_ACTIVE)
+      // search
+      subSearch.classList.remove(IS_ACTIVE)
+      subSearch.childNodes[1].classList.remove(IS_ACTIVE)
+      subSearch.childNodes[3].classList.remove(IS_ACTIVE)
+
+      document.documentElement.classList.remove('_open')
+    })
+  });
+
 }
