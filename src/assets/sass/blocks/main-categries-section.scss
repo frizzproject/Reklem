@@ -1,0 +1,79 @@
+.categories__section {
+    padding-bottom: 15rem;
+}
+
+.categories__more {
+    &-title {
+        color: #000000;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--h1-size);
+        line-height: 4.4rem;
+
+        /* MEDIA <= 580px */
+        @media only screen and (max-width: 580px) {
+            line-height: 2.8rem;
+        }
+    }
+}
+
+.categories__cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(10rem, 1fr));
+    justify-items: center;
+    align-items: center;
+
+    /* MEDIA <= 580px */
+    @media only screen and (max-width: 580px) {
+        grid-template-columns: repeat(3, minmax(10rem, 1fr));
+    }
+
+    &-item {
+        display: block;
+
+        margin-top: 10rem;
+        max-width: 10rem;
+
+        &:hover {
+            box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.17);
+        }
+
+        /* MEDIA <= 580px */
+        @media only screen and (max-width: 580px) {
+            margin-top: 4.4rem;
+        }
+    }
+
+    &-item-wrap {
+        text-align: center;
+
+        &-icon {
+            object-fit: cover;
+            object-position: center;
+            border-radius: 2.1rem;
+        }
+
+        &-title {
+            color: #000000;
+            margin-top: 2rem;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: var(--h3-size);
+        }
+    }
+}
+
+#caregorie-4, 
+#caregorie-5,
+#caregorie-6,
+#caregorie-7,
+#caregorie-8,
+#caregorie-9,
+#caregorie-10 {
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
+}

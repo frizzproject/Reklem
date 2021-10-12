@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     /* init product sliders */
     initProductsSlider();
 
+    /* init reviews sliders */
+    initReviewsSlider() 
+
 });
 
 /* init product sliders */
@@ -34,11 +37,32 @@ function initProductsSlider() {
         // when window width is >= 768px
         1120: {
             slidesPerView: 4,
-            spaceBetween: 64
+            spaceBetween: 64,
         }
     }
 
   });
   
 
+}
+
+/* init reviews sliders */
+function initReviewsSlider() {
+  const reviewsSlider = new Swiper(".reviews__slider", {
+
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    speed: 450,
+    slidesPerView: 1,
+    spaceBetween: 100,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  });
+  
 }

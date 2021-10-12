@@ -1,6 +1,11 @@
 .constructor__section {
     position: relative;
     padding: 19rem 0 19rem 0;
+
+    /* MEDIA <= 580px */
+    @media only screen and (max-width: 580px) {
+        padding: 14rem 0 0 0;
+    }
 }
 
 .constructor__section .container {
