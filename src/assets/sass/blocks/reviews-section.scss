@@ -169,13 +169,6 @@
 }
 
 .reviws__btn-prev {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    left: auto;
-    right: 4rem;
-    top: 100%;
-
     /* MEDIA <= 580px */
     @media only screen and (max-width: 580px) {
         top: 12rem;
@@ -183,12 +176,6 @@
 }
 
 .reviws__btn-next {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    top: 100%;
-    right: 0;
-
     /* MEDIA <= 580px */
     @media only screen and (max-width: 580px) {
         top: 12rem;

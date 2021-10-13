@@ -7,13 +7,18 @@
     }
 }
 
+.about__pattern {
+    position: relative;
+    background: url(../img/pattern.png) no-repeat top 2rem right;
+}
+
 .about__wrap {
     display: flex;
     flex-direction: column;
 
     &-main {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
         /* MEDIA <= 768px */
         @media only screen and (max-width: 768px) {
@@ -28,8 +33,6 @@
 }
 
 .about__wrap-content {
-    margin-right: 12.8rem;
-
     /* MEDIA <= 768px */
     @media only screen and (max-width: 768px) {
         margin-right: 2rem;
@@ -111,6 +114,39 @@
     }
 }
 
+.catalog__about-img {
+    position: relative;
+    height: auto;
+    overflow: visible;
+
+    .catalog-img-2 {
+        position: absolute;
+        top: 16.2rem;
+        right: -30%;
+        max-width: 32rem;
+        height: auto;
+
+        /* MEDIA <= 480px */
+        @media only screen and (max-width: 480px) {
+            max-width: 20rem;
+            top: 10rem;
+            right: 0;
+
+            /* MEDIA <= 480px */
+            @media only screen and (max-width: 480px) {
+                display: none;
+            }
+        }
+    }
+
+    img {
+        max-width: inherit;
+        border-radius: 2.8rem;
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
 .about__wrap-benifits {
     margin-top: 14rem;
 
@@ -118,15 +154,11 @@
     @media only screen and (max-width: 768px) {
         margin-top: 10rem;
     }
-
-    /* MEDIA <= 480px */
-    @media only screen and (max-width: 480px) {
-    }
 }
 
 .benifits__cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
     /* MEDIA <= 480px */
     @media only screen and (max-width: 480px) {
@@ -138,7 +170,6 @@
 
     &-item {
         flex: 0 1 19.5rem;
-        margin-right: 6.4rem;
 
         /* MEDIA <= 768px */
         @media only screen and (max-width: 768px) {
@@ -177,5 +208,16 @@
             font-weight: normal;
             font-size: var(--text-normal-size);
         }
+    }
+}
+
+.about__btn {
+    padding-top: 14rem;
+    text-align: right;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        padding-top: 2.8rem;
+        text-align: left;
     }
 }

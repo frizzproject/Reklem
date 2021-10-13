@@ -27,17 +27,12 @@
 
 .products__slider {
     position: relative;
-    width: 85%;
+    width: 100%;
     height: 100%;
 
     list-style: none;
     padding: 0;
     overflow: hidden;
-
-    /* MEDIA <= 1120px */
-    @media only screen and (max-width: 1120px) {
-        width: 100%;
-    }
 }
 
 .products__slider-next {
@@ -90,6 +85,11 @@
     }
 
     &:hover + .product__card-body .product__begin-price {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &:hover + .product__card-body .product__begin-label {
         opacity: 0;
         visibility: hidden;
     }
@@ -180,5 +180,11 @@
         background-color: var(--green-two);
         color: var(--green-three);
         box-shadow: none;
+    }
+
+    /* MEDIA <= 580px */
+    @media only screen and (max-width: 580px) {
+        padding: 1.2rem 2.5rem;
+
     }
 }

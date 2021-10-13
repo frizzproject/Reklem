@@ -19,7 +19,7 @@
 
 .services__cards {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     margin-top: 6.8rem;
 
@@ -38,7 +38,6 @@
 
     &-item {
         flex: 0 1 19.2rem;
-        margin-right: 6.4rem;
 
         display: flex;
         flex-direction: column;

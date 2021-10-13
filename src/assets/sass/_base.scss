@@ -28,8 +28,16 @@ body {
     min-height: 100vh;
 }
 
-.container {
+.header .container {
     max-width: 1220px;
+}
+
+.breadcrambs .container {
+    max-width: 1220px;
+}
+
+.container {
+    max-width: 980px;
     height: 100%;
     padding: 0 10px;
     margin: 0 auto;
@@ -326,4 +334,39 @@ svg path {
 
 ._scroll-ban {
     overflow-y: hidden;
+}
+
+
+// CUSTOM SWIPER
+
+.swiper-button-next, .swiper-button-prev {
+    width: 4rem !important;
+    height: 4rem !important;
+
+    background: #ffffff;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 1em;
+    transition: var(--transition);
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    &:hover svg path {
+        fill: var(--green-two);
+    }
+
+    &:hover {
+        color: var(--green-two);
+        box-shadow: none;
+    }
+
+    &:active,
+    &:focus {
+        box-shadow: inset 7px 7px 10px -6px rgba(0, 0, 0, 0.25);
+    }
+
+    &::after {
+        display: none;
+    }
 }
