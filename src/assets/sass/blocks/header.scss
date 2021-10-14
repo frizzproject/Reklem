@@ -251,34 +251,7 @@
     }
 }
 
-.drop__trigger {
-    position: relative;
-    width: 100%;
-    border-bottom: 1px solid var(--grey-one);
-
-    &:hover svg path {
-        fill: var(--green-one);
-    }
-
-    .menu__item-link {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
 .menu__item-dropdown {
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--transition);
-    z-index: 10;
-
-    position: absolute;
-    width: 100%;
-    top: 105%;
-    background-color: #ffffff;
-    left: 0;
-
     .menu__item {
         text-align: center;
     }

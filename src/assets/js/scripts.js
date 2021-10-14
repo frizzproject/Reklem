@@ -1,5 +1,7 @@
 import Swiper from "swiper/swiper-bundle";
 
+const IS_ACTIVE = "_isActive";
+
 document.addEventListener("DOMContentLoaded", function () {
   /* init product sliders */
   initProductsSlider();
@@ -10,8 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
   /* init categories sliders */
   initCategoriesSlider();
 
-  /* navigation */
+  /* navigation init */
   navigation();
+
+  /* accordions init */
+  accordions();
+
 });
 
 /* product sliders */
@@ -104,7 +110,6 @@ function initCategoriesSlider() {
 /* navigation */
 function navigation() {
   /* varibles */
-  const IS_ACTIVE = "_isActive";
 
   const menuBtn = document.querySelector(".menu__nav-burger");
   const closeBtns = document.querySelectorAll(".nav__close");
@@ -165,4 +170,32 @@ function navigation() {
       document.documentElement.classList.remove("_open");
     });
   });
+}
+
+/* accordions */
+function accordions() {
+  const triggers = document.querySelectorAll('.drop__trigger');
+  const triggerDrops = document.querySelectorAll('.dropdown');
+
+  triggers.forEach(triger => {
+    triger.addEventListener('click', function() {
+      // this drop list
+      let thisDrop = this.querySelector('.dropdown');
+      
+      if (!triger.classList.contains(IS_ACTIVE)) 
+      {
+        // close all drops
+        triggers.forEach(lastTrigger => lastTrigger.classList.remove(IS_ACTIVE))
+        triggerDrops.forEach(lastDrop => lastDrop.classList.remove(IS_ACTIVE))
+
+        triger.classList.add(IS_ACTIVE);
+        thisDrop.classList.add(IS_ACTIVE);
+      } else 
+      {
+        triger.classList.remove(IS_ACTIVE);
+        thisDrop.classList.remove(IS_ACTIVE);
+      }
+    })
+  })
+
 }

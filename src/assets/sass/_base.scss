@@ -32,6 +32,10 @@ body {
     max-width: 1220px;
 }
 
+.footer .container {
+    max-width: 1220px;
+}
+
 .breadcrambs .container {
     max-width: 1220px;
 }
@@ -46,6 +50,10 @@ body {
 main {
     position: relative;
     flex: 1 1 auto;
+}
+
+.main-pattern {
+    background: url(../img/pattern.png) no-repeat top 2rem right;
 }
 
 footer {
@@ -304,6 +312,15 @@ html._open body .wrapper .main::before {
 
     h1 {
         margin-right: 2.8rem;
+    }
+}
+
+.title__back {
+    display: flex;
+    align-items: center;
+
+    h1 {
+        margin-left: 2.8rem;
     }
 }
 
