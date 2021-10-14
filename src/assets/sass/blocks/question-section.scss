@@ -52,7 +52,6 @@
 }
 
 .question__col-record {
-    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +74,6 @@
 
 .question__col-record-name {
     color: #000000;
-    margin-right: 1rem;
     transition: var(--transition);
 
     font-style: normal;

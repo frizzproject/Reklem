@@ -163,12 +163,28 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+    transition: var(--transition);
     &::after {
         display: none;
     }
 }
 
 .reviws__btn-prev {
+    width: 2rem !important;
+    height: 2rem !important;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    left: auto;
+    right: 5rem;
+
+    top: auto;
+    bottom: 3rem;
+
+    &:active, &:focus {
+        box-shadow: none;
+    }
+
     /* MEDIA <= 580px */
     @media only screen and (max-width: 580px) {
         top: 12rem;
@@ -176,6 +192,20 @@
 }
 
 .reviws__btn-next {
+    width: 2rem !important;
+    height: 2rem !important;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    right: 2rem;
+
+    top: auto;
+    bottom: 3rem;
+
+    &:active, &:focus {
+        box-shadow: none;
+    }
+
     /* MEDIA <= 580px */
     @media only screen and (max-width: 580px) {
         top: 12rem;

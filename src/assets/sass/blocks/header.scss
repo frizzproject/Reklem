@@ -226,7 +226,6 @@
         }
 
         &__item {
-            padding: 15px 0;
             margin: 0;
         }
 
@@ -252,9 +251,19 @@
 }
 
 .menu__item-dropdown {
+    padding-left: 1rem;
     .menu__item {
-        text-align: center;
+        text-align: left;
     }
+}
+
+.menu__item-link.drop__trigger {
+    padding: 1.5rem 0;
+}
+
+.menu__item-link {
+    display: block;
+    padding: 1.5rem 0;
 }
 
 /* /MENU */

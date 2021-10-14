@@ -3,8 +3,14 @@ import Swiper from "swiper/swiper-bundle";
 const IS_ACTIVE = "_isActive";
 
 document.addEventListener("DOMContentLoaded", function () {
-  /* init product sliders */
+  /* init products sliders */
   initProductsSlider();
+  
+  /* init product preview sliders */
+  initProductPreviewSlider();
+
+  /* init product sliders */
+  initProductSlider();
 
   /* init reviews sliders */
   initReviewsSlider();
@@ -17,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* accordions init */
   accordions();
-
 });
 
 /* product sliders */
@@ -50,6 +55,80 @@ function initProductsSlider() {
         spaceBetween: 64,
       },
     },
+  });
+}
+
+/* product sliders */
+function initProductPreviewSlider() {
+  const productPreviewSlider = new Swiper(".product__card-preview-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    speed: 450,
+    slidesPerView: 1,
+    spaceBetween: 40,
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    
+  });
+}
+
+/* product sliders */
+function initProductSlider() {
+  const productPreview = document.querySelectorAll(".product__slide-img");
+  const productPreviewMas = [];
+
+  productPreview.forEach(img => {
+    productPreviewMas.push(img.src);
+  });
+
+  const productSlider = new Swiper(".product__slider", {
+    // Optional parameters
+    direction: "vertical",
+    loop: true,
+    speed: 450,
+    slidesPerView: 3,
+    spaceBetween: 40,
+    slideToClickedSlide: true,
+
+    autoplay: {
+      delay: 5000,
+    },
+
+    zoom: {
+      maxRatio: 2,
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  productSlider.on('slideChangeTransitionEnd', function () {
+    const activeSlideImg = document.querySelector('.swiper-slide-active > .swiper-zoom-container > .product__slide-img');
+    document.querySelector('.product__preview-img').src = activeSlideImg.src
   });
 }
 
@@ -174,28 +253,36 @@ function navigation() {
 
 /* accordions */
 function accordions() {
-  const triggers = document.querySelectorAll('.drop__trigger');
-  const triggerDrops = document.querySelectorAll('.dropdown');
+  const triggersWrap = document.querySelectorAll(".drop__wrap");
+  const triggers = document.querySelectorAll(".drop__trigger");
+  const triggerDrops = document.querySelectorAll(".dropdown");
 
-  triggers.forEach(triger => {
-    triger.addEventListener('click', function() {
-      // this drop list
-      let thisDrop = this.querySelector('.dropdown');
-      
-      if (!triger.classList.contains(IS_ACTIVE)) 
-      {
+  triggers.forEach((triger) => {
+    triger.addEventListener("click", function () {
+      // this drop list and wrap
+      let thisWrap = this.parentElement;
+      let thisDrop = this.nextElementSibling;
+
+      if (!triger.classList.contains(IS_ACTIVE)) {
         // close all drops
-        triggers.forEach(lastTrigger => lastTrigger.classList.remove(IS_ACTIVE))
-        triggerDrops.forEach(lastDrop => lastDrop.classList.remove(IS_ACTIVE))
+        triggersWrap.forEach((lastWrap) =>
+          lastWrap.classList.remove(IS_ACTIVE)
+        );
+        triggers.forEach((lastTrigger) =>
+          lastTrigger.classList.remove(IS_ACTIVE)
+        );
+        triggerDrops.forEach((lastDrop) =>
+          lastDrop.classList.remove(IS_ACTIVE)
+        );
 
+        thisWrap.classList.add(IS_ACTIVE);
         triger.classList.add(IS_ACTIVE);
         thisDrop.classList.add(IS_ACTIVE);
-      } else 
-      {
+      } else {
+        thisWrap.classList.remove(IS_ACTIVE);
         triger.classList.remove(IS_ACTIVE);
         thisDrop.classList.remove(IS_ACTIVE);
       }
-    })
-  })
-
+    });
+  });
 }

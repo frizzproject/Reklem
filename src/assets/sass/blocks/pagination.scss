@@ -1,0 +1,39 @@
+.pagination {
+    margin-top: 10rem;
+}
+
+.pagination__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__body {
+    margin: 0 1.4rem;
+}
+
+.pagination__item {
+    width: 4rem;
+    height: 4rem;
+
+    margin: 0 0.7rem;
+    transition: var(--transition);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--text-normal-size);
+
+    color: #000000;
+
+    &:hover {
+        color: var(--green-one);
+    }
+
+    &:last-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
