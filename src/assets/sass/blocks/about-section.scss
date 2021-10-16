@@ -1,6 +1,11 @@
 .section__about {
     padding: 14rem 0 17rem 0;
 
+    /* MEDIA <= 768px */
+    @media only screen and (max-width: 768px) {
+        padding: 6rem 0 6rem 0;
+    }
+
     /* MEDIA <= 480px */
     @media only screen and (max-width: 480px) {
         padding: 6rem 0 10rem 0;

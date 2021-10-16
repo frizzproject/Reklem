@@ -1,0 +1,29 @@
+.tab__body {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+.tabs__controller {
+    display: flex;
+    align-items: center;
+}
+
+.tab__switch {
+    padding: 2.2rem 3.2rem;
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--green-one);
+    }
+}
+
+.tab__switch._isActive {
+    color: var(--green-one);
+}
+
+.tab__body._isActive {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}

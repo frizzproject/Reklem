@@ -44,6 +44,10 @@ body {
     max-width: 1100px;
 }
 
+.contacts__section .container {
+    max-width: 1100px;
+}
+
 .container {
     max-width: 980px;
     height: 100%;
@@ -85,7 +89,7 @@ a {
     list-style: none;
 }
 
-button {
+button, label {
     cursor: pointer;
 }
 
@@ -358,10 +362,10 @@ svg path {
     overflow-y: hidden;
 }
 
-
 // CUSTOM SWIPER
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
     width: 4rem !important;
     height: 4rem !important;
 
@@ -392,3 +396,44 @@ svg path {
         display: none;
     }
 }
+
+.label-rew {
+    padding: 0.3rem 1.2rem;
+    background-color: var(--green-one);
+    text-align: center;
+    border-radius: 1.4rem;
+    color: #ffffff;
+    transition: var(--transition);
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--text-normal-size);
+}
+
+.label-count {
+    padding: 1rem;
+    background-color: var(--green-one);
+    text-align: center;
+    border-radius: 1rem;
+    color: #ffffff;
+    transition: var(--transition);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--text-normal-size);
+}
+
+.label-design {
+    padding: 0.3rem 1.2rem;
+    background-color: var(--orange-one);
+    text-align: center;
+    border-radius: 1.4rem;
+    color: #ffffff;
+    transition: var(--transition);
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--text-normal-size);
+}
+
+

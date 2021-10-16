@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* accordions init */
   accordions();
+
 });
 
 /* product sliders */

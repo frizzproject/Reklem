@@ -386,15 +386,6 @@
     }
 }
 
-.product__tabs-switch {
-    padding: 2.2rem 3.2rem;
-    transition: var(--transition);
-
-    &:hover {
-        color: var(--green-one);
-    }
-}
-
 .product__description {
     font-style: normal;
     font-weight: normal;
@@ -448,38 +439,3 @@
     align-items: flex-start;
 }
 
-.product__file-btn {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.3rem 1.8rem;
-    margin: 0.7rem 0;
-
-    font-style: normal;
-    font-weight: 500;
-    font-size: var(--text-lite-size);
-
-    color: #000000;
-    transition: var(--transition);
-
-    &:hover {
-        color: var(--green-one);
-    }
-}
-
-.tab__body {
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-}
-
-.tab__switch._isActive {
-    color: var(--green-one);
-}
-
-.tab__body._isActive {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
-}
