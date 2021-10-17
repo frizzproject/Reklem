@@ -27,3 +27,9 @@
     visibility: visible;
     height: 100%;
 }
+
+.drop__trigger {
+    &:hover {
+        color: var(--green-one);
+    }
+}

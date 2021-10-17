@@ -1,0 +1,20 @@
+#total-g.total__price {
+    background-color: var(--green-one);
+}
+
+#total-o.total__price {
+    background-color: var(--orange-one);
+}
+
+.total__price.total__price-l {
+    max-width: 44.8rem;
+    margin-right: 0;
+}
+
+.total__price.total__price-l .total-name {
+    color: #ffffff;
+}
+
+.total__price.total__price-l .price-prefix {
+    color: #ffffff;
+}

@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    font-family: Inter, sans-serif;
 }
 
 *::selection {
@@ -12,7 +13,6 @@ html,
 body {
     overflow-x: hidden;
     font-size: 10px;
-    font-family: Inter, sans-serif;
 }
 
 body {
@@ -48,6 +48,17 @@ body {
     max-width: 1100px;
 }
 
+.history__section .container {
+    max-width: 1100px;
+}
+
+
+
+.filters .container {
+    max-width: 100%;
+    padding: 2rem 3.4rem;
+}
+
 .container {
     max-width: 980px;
     height: 100%;
@@ -80,7 +91,6 @@ h4,
 h5,
 h6,
 ul,
-li,
 p,
 a {
     margin: 0;
@@ -94,14 +104,16 @@ button, label {
 }
 
 button,
-input {
+input,
+textarea {
     background: none;
     border: none;
     padding: 0;
     outline: none;
 
     &:disabled {
-        opacity: 0.7;
+        opacity: 0.5;
+        cursor: default;
     }
 }
 
@@ -434,6 +446,21 @@ svg path {
     font-style: normal;
     font-weight: normal;
     font-size: var(--text-normal-size);
+}
+
+.text-link {
+    color: var(--green-one);
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+._disabled {
+    color: var(--grey-three) !important;
+}
+
+.product__counter._disabled {
+    box-shadow: none;
 }
 
 

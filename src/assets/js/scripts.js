@@ -1,11 +1,13 @@
 import Swiper from "swiper/swiper-bundle";
+import noUiSlider from "nouislider";
+import wNumb from "./wNumb";
 
 const IS_ACTIVE = "_isActive";
 
 document.addEventListener("DOMContentLoaded", function () {
   /* init products sliders */
   initProductsSlider();
-  
+
   /* init product preview sliders */
   initProductPreviewSlider();
 
@@ -18,13 +20,106 @@ document.addEventListener("DOMContentLoaded", function () {
   /* init categories sliders */
   initCategoriesSlider();
 
+  /* init sponsors sliders */
+  initSponsorsSlider();
+
   /* navigation init */
   navigation();
 
   /* accordions init */
   accordions();
 
+  /* priceSlider init */
+  priceSlider();
+
+  /* show all filters */
+  filtersShow();
+
 });
+
+/* price range */
+function priceSlider() {
+  const priceSlider = document.getElementById("sliderPrice");
+  const sliderValues = [
+    document.getElementById("priceFrom"),
+    document.getElementById("priceTo"),
+  ];
+
+  noUiSlider.create(priceSlider, {
+    start: [70, 35000],
+    connect: true,
+    range: {
+      min: [70],
+      max: [35000],
+    },
+    format: wNumb({
+      decimals: 0,
+      thousand: "",
+      suffix: "₽",
+    }),
+  });
+
+  priceSlider.noUiSlider.on("update", function (values, handle) {
+    sliderValues[handle].value = values[handle];
+  });
+
+  sliderValues.forEach(function (input, handle) {
+    input.addEventListener("change", function () {
+      priceSlider.noUiSlider.setHandle(handle, this.value);
+    });
+
+    input.addEventListener("keydown", function (e) {
+      var values = priceSlider.noUiSlider.get();
+      var value = Number(values[handle]);
+
+      // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+      var steps = priceSlider.noUiSlider.steps();
+
+      // [down, up]
+      var step = steps[handle];
+
+      var position;
+
+      // 13 is enter,
+      // 38 is key up,
+      // 40 is key down.
+      switch (e.key) {
+        case 'Enter':
+          priceSlider.noUiSlider.setHandle(handle, this.value);
+          break;
+
+        case 'ArrowUp':
+          // Get step to go increase slider value (up)
+          position = step[1];
+
+          // false = no step is set
+          if (position === false) {
+            position = 1;
+          }
+
+          // null = edge of slider
+          if (position !== null) {
+            priceSlider.noUiSlider.setHandle(handle, value + position);
+          }
+
+          break;
+
+        case 'ArrowDown':
+          position = step[0];
+
+          if (position === false) {
+            position = 1;
+          }
+
+          if (position !== null) {
+            priceSlider.noUiSlider.setHandle(handle, value - position);
+          }
+
+          break;
+      }
+    });
+  });
+}
 
 /* product sliders */
 function initProductsSlider() {
@@ -74,10 +169,9 @@ function initProductPreviewSlider() {
     },
 
     pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
+      el: ".swiper-pagination",
+      type: "bullets",
     },
-    
   });
 }
 
@@ -86,7 +180,7 @@ function initProductSlider() {
   const productPreview = document.querySelectorAll(".product__slide-img");
   const productPreviewMas = [];
 
-  productPreview.forEach(img => {
+  productPreview.forEach((img) => {
     productPreviewMas.push(img.src);
   });
 
@@ -127,9 +221,11 @@ function initProductSlider() {
     },
   });
 
-  productSlider.on('slideChangeTransitionEnd', function () {
-    const activeSlideImg = document.querySelector('.swiper-slide-active > .swiper-zoom-container > .product__slide-img');
-    document.querySelector('.product__preview-img').src = activeSlideImg.src
+  productSlider.on("slideChangeTransitionEnd", function () {
+    const activeSlideImg = document.querySelector(
+      ".swiper-slide-active > .swiper-zoom-container > .product__slide-img"
+    );
+    document.querySelector(".product__preview-img").src = activeSlideImg.src;
   });
 }
 
@@ -178,6 +274,42 @@ function initCategoriesSlider() {
       1120: {
         slidesPerView: 7,
         spaceBetween: 48,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+    },
+  });
+}
+
+/* reviews sliders */
+function initSponsorsSlider() {
+  const sponsorsSlider = new Swiper(".sponsors__slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    speed: 450,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 28,
+      },
+      // when window width is >= 768px
+      580: {
+        slidesPerView: 3,
+        spaceBetween: 48,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 64,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -285,5 +417,29 @@ function accordions() {
         thisDrop.classList.remove(IS_ACTIVE);
       }
     });
+  });
+}
+
+/* filters */
+function filtersShow() {
+  const filters = document.querySelector('.filters');
+  const allFilters = document.querySelector('#allFilters');
+  const closeFilters = document.querySelector('.filters__close');
+  
+  allFilters.addEventListener('click', () => {
+    if (!filters.classList.contains(IS_ACTIVE)) {
+      filters.classList.add(IS_ACTIVE);
+      document.documentElement.classList.add("_open");
+      document.documentElement.classList.add("_scroll-ban");
+    } else {
+      filters.classList.remove(IS_ACTIVE);
+      document.documentElement.classList.remove("_scroll-ban");
+      document.documentElement.classList.remove("_open");
+    }   
+  });
+  closeFilters.addEventListener('click', () => {
+    filters.classList.remove(IS_ACTIVE);
+    document.documentElement.classList.remove("_scroll-ban");
+    document.documentElement.classList.remove("_open");
   });
 }

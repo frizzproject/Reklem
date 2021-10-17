@@ -58,6 +58,10 @@
 @import '../../../node_modules/swiper/modules/navigation/navigation.scss';
 @import '../../../node_modules/swiper/modules/pagination/pagination.scss';
 
+/* nouislider */
+@import "vendor/nouislider.scss";
+
+
 /* Blocks */
 /* General */
 @import "blocks/header.scss";
@@ -66,13 +70,19 @@
 @import "blocks/catalog.scss";
 @import "blocks/services.scss";
 @import "blocks/contacts.scss";
+@import "blocks/contacts-form.scss";
 @import "blocks/form.scss";
 @import "blocks/pagination.scss";
 @import "blocks/accordion.scss";
+@import "blocks/sponsors-slider.scss";
+@import "blocks/total-price-panel.scss";
+@import "blocks/filters-panel.scss";
 @import "blocks/404.scss";
+@import "blocks/basket.scss";
 @import "blocks/breadcrambs.scss";
 @import "blocks/sorts.scss";
 @import "blocks/tabs.scss";
+@import "blocks/empty.scss";
 /* Sections */
 @import "blocks/present-section.scss";
 @import "blocks/about-section.scss";
@@ -85,4 +95,10 @@
 @import "blocks/question-section.scss";
 @import "blocks/product-section.scss";
 @import "blocks/portfolio-section.scss";
+@import "blocks/prod-section.scss";
+@import "blocks/vacancies-section.scss";
+@import "blocks/history-section.scss";
+@import "blocks/new-section.scss";
+@import "blocks/download-section.scss";
+@import "blocks/commercial-section.scss";
 

@@ -3,11 +3,11 @@ layout: default
 title: Reklem
 ---
 
-<main class="main main-pattern">
+<main class="main">
 
     <div class="breadcrambs">
         <div class="container">
-            <p class="breadcrambs__path">Главная / Услуги / </p>
+            <p class="breadcrambs__path">Главная / О компании / </p>
         </div>
     </div>
 
@@ -15,180 +15,224 @@ title: Reklem
         <div class="container">
             <div class="about__wrap">
 
-                <div class="services__about-content">
-                    <h1 class="services__title">
-                        <span class="underline-style">Услуги</span>
-                    </h1>
-                    <p class="services__text">Следует отметить, что разбавленное изрядной долей эмпатии,
-                        рациональное
-                        мышление требует определения и уточнения прогресса профессионального сообщества. Но глубокий
-                        уровень погружения влечет за собой процесс внедрения и модернизации глубокомысленных
-                        рассуждений.</p>
-                    <button href="./about.html" type="button" class="about__button btn__large">
-                        <span>Развернуть</span>
-                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="about__wrap-main">
+                    <div class="about__wrap-content">
+                        <h1 class="about__title">
+                            <span class="underline-style">О компании</span>
+                        </h1>
+                        <p class="about__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что
+                            ключевые особенности структуры проекта.</p>
+                        <p class="about__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что
+                            ключевые особенности структуры проекта опыт мы упускаем, что ключевые особенности структуры
+                            проекта.</p>
+                        <p class="about__text">Значимость этих проблем настолько очевидна, что реализация намеченных
+                            плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые
+                            горизонты для системы массового участия. Учитывая ключевые сценарии поведения, выбранный
+                            нами инновационный путь способствует повышению качества первоочередных требований. Имеется
+                            спорная точка зрения, гласящая примерно следующее.</p>
+                    </div>
+
+                    <div class="about__wrap-image">
+                        <img src="./assets/img/about-img.png" alt="image">
+                    </div>
+                </div>
+
+                <!-- include sponsors slider -->
+                {{> sponsors-slider }}
+
+            </div>
+        </div>
+    </section>
+
+    <section class="production__section">
+        <div class="container">
+
+            <div class="production__wrap">
+
+                <div class="production__content">
+                    <h1 class="production__content-title"><span class="underline-style">Производство</span></h1>
+                    <p class="production__content-text">Значимость этих проблем настолько очевидна, что реализация
+                        намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает
+                        новые горизонты для системы массового участия. Учитывая ключевые сценарии поведения, выбранный
+                        нами инновационный путь способствует повышению качества первоочередных требований. Имеется
+                        спорная точка зрения, гласящая примерно следующее.</p>
+                </div>
+
+                <div class="production__video">
+                    <!-- video place -->
+                    <img src="./assets/img/video-plug.png" alt="">
+                    <!-- video place -->
+                    <div class="play__icon">
+                        <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M9.76877 0.899655C10.0771 1.2103 10.0771 1.71395 9.76877 2.0246L5.55824 6.26702C5.24993 6.57767 4.75007 6.57767 4.44176 6.26702L0.231232 2.0246C-0.0770772 1.71395 -0.0770772 1.2103 0.231231 0.899655C0.53954 0.589011 1.03941 0.589011 1.34772 0.899655L5 4.57961L8.65228 0.899655C8.96059 0.589011 9.46046 0.589011 9.76877 0.899655Z"
-                                fill="black" />
+                                d="M41.7982 17.4512C44.7739 19.7537 44.7739 24.246 41.7982 26.5485C32.8056 33.5067 22.764 38.9911 12.0494 42.7966L10.0919 43.4918C6.34712 44.8218 2.39159 42.2881 1.88462 38.4225C0.468146 27.6218 0.468146 16.3779 1.88462 5.57722C2.39159 1.71157 6.34713 -0.822108 10.0919 0.507913L12.0494 1.20312C22.764 5.00856 32.8056 10.493 41.7982 17.4512ZM39.0444 22.9895C39.6918 22.4885 39.6918 21.5111 39.0444 21.0102C30.4289 14.3439 20.8085 9.08944 10.5433 5.44361L8.58588 4.7484C7.61103 4.40217 6.49072 5.06204 6.34642 6.16237C4.98088 16.5746 4.98088 27.4251 6.34641 37.8373C6.49072 38.9376 7.61103 39.5975 8.58588 39.2513L10.5433 38.5561C20.8085 34.9102 30.4289 29.6558 39.0444 22.9895Z"
+                                fill="white" />
+                            <path
+                                d="M39.0444 21.0102C39.6918 21.5111 39.6918 22.4885 39.0444 22.9895C30.4289 29.6558 20.8085 34.9102 10.5433 38.5561L8.58588 39.2513C7.61103 39.5975 6.49072 38.9376 6.34641 37.8373C4.98088 27.4251 4.98088 16.5746 6.34642 6.16237C6.49072 5.06204 7.61103 4.40217 8.58588 4.7484L10.5433 5.44361C20.8085 9.08944 30.4289 14.3439 39.0444 21.0102Z"
+                                fill="white" />
                         </svg>
-
-                    </button>
-                </div>
-
-                <div class="services__banners">
-                    <picture>
-                        <source srcset="./assets/img/window-2-mob.png" media="(max-width: 580px)" type="image/png">
-                        <img class="window-serv-1" src="./assets/img/window-2.png">
-                    </picture>
-
-                    <picture>
-                        <source srcset="./assets/img/window-3-mob.png" media="(max-width: 580px)" type="image/png">
-                        <img class="window-serv-2" src="./assets/img/window-3.png">
-                    </picture>
-                </div>
-
-                <div class="services__btn">
-                    <a href="#" class="main__btn more__button">
-                        Подробнее
-                    </a>
+                    </div>
                 </div>
 
             </div>
 
         </div>
-
-        </div>
     </section>
 
-    <section id="services" class="services__section">
+    <section class="vacancies__section">
         <div class="container">
 
-            <div class="services__wrap">
+            <div class="vacancies__wrap">
 
-                <div class="services__records">
+                <div class="vacancies__head">
+                    <h1 class="vacancies__title"><span class="underline-style">Вакансии</span></h1>
 
-                    <div class="services__record">
-                        <div class="services__record-img">
-                            <img src="./assets/img/services-1.png" alt="img">
+                    <div class="vacancies__sort-elements">
+
+                        <div class="sort__checkbox">
+                            <input type="checkbox" id="MOSCOW" name="Москва">
+                            <label for="MOSCOW">Москва</label>
                         </div>
-                        <div class="services__record-body">
-                            <img class="services__record-body-icon" src="./assets/img/laser-img.png" alt="laser">
-                            <h3 class="services__record-body-title">Гравировка</h3>
-                            <p class="services__record-body-text">Нанесем на изделия логотип, рисунок или надпись</p>
-                            <a href="#" class="services__record-body-btn btn__more-l">
-                                Подробнее
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </a>
+
+                        <div class="sort__checkbox">
+                            <input type="checkbox" id="ULANUDE" name="Улан-Удэ">
+                            <label for="ULANUDE">Улан-Удэ</label>
                         </div>
+
+                        <div class="sort__checkbox">
+                            <input type="checkbox" id="OTHER" name="Удаленно">
+                            <label for="OTHER">Удаленно</label>
+                        </div>
+
                     </div>
+                </div>
 
-                    <div class="services__record">
-                        <div class="services__record-img">
-                            <img src="./assets/img/services-2.png" alt="img">
-                        </div>
-                        <div class="services__record-body">
-                            <img class="services__record-body-icon" src="./assets/img/a-drop-icon.png" alt="drop">
-                            <h3 class="services__record-body-title">Шелкография</h3>
-                            <p class="services__record-body-text">Изображения высоко качества на любых материалах</p>
-                            <a href="#" class="services__record-body-btn btn__more-l">
-                                Подробнее
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                <div class="vacancies__body">
 
-                    <div class="services__record">
-                        <div class="services__record-img">
-                            <img src="./assets/img/services-3.png" alt="img">
-                        </div>
-                        <div class="services__record-body">
-                            <img class="services__record-body-icon" src="./assets/img/press-icon.png" alt="press">
-                            <h3 class="services__record-body-title">Тиснение</h3>
-                            <p class="services__record-body-text">Нанесения рельефного рисунка</p>
-                            <a href="#" class="services__record-body-btn btn__more-l">
-                                Подробнее
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    <div class="vacancies__cards">
 
-                    <div class="services__record">
-                        <div class="services__record-img">
-                            <img src="./assets/img/services-4.png" alt="img">
+                        <div class="vacancies__card">
+                            <div class="vacancies__card-head">
+                                <h3 class="vacancies__card-head-title">Менеджер по работе с клиентами оклад + бонус</h3>
+                                <div class="vacancies__card-head-info">
+                                    <span class="label-rew">Москва</span>
+                                    <span class="label-rew">Удаленно</span>
+                                    <p class="vacancies__card-head-price">от 50000₽</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__card-body">
+                                <p class="vacancies__card-body-text">Коммуникабельность‚ аккуратность‚ внимательность,
+                                    позитивный настрой‚ легкая обучаемость‚ самозадачность, стрессоустойчивость,
+                                    активная жизненная позиция, умение решать конфликтные ситуации с клиентами.</p>
+                                <button class="vacancies__card-body-btn btn__large">
+                                    <span>Откликнуться</span>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3899 10.2882C11.6865 7.4371 11.6865 4.56288 11.3899 1.71175C11.2841 0.695048 10.1118 0.180038 9.29147 0.789851L6.55571 2.82346C5.72208 3.44313 4.71099 3.77776 3.67226 3.77776H1.11947C0.659229 3.77776 0.286133 4.15086 0.286133 4.6111V7.38887C0.286133 7.84911 0.659228 8.22221 1.11947 8.22221H1.53565L0.97208 10.3255C0.909279 10.5599 1.02382 10.8055 1.24373 10.908L3.69783 12.0524C3.83178 12.1149 3.9865 12.1149 4.12045 12.0524C4.2544 11.99 4.35385 11.8715 4.3921 11.7287L5.2339 8.58708C5.24284 8.55371 5.24818 8.52022 5.25017 8.48703C5.71516 8.64763 6.15585 8.87928 6.55571 9.17652L9.29147 11.2101C10.1118 11.8199 11.2841 11.3049 11.3899 10.2882ZM10.3952 1.81523C10.6847 4.59756 10.6847 7.40242 10.3952 10.1847C10.3697 10.4305 10.0863 10.555 9.88804 10.4076L7.15229 8.37396C6.14617 7.62607 4.92589 7.22221 3.67226 7.22221L1.28613 7.22221L1.28613 4.77776H3.67226C4.9259 4.77776 6.14617 4.3739 7.15228 3.62601L9.88804 1.59241C10.0863 1.44502 10.3697 1.56949 10.3952 1.81523ZM4.29077 8.26194C4.0865 8.23558 3.87993 8.22221 3.67226 8.22221H2.57093L2.04659 10.1791L3.5804 10.8943L4.26797 8.32826C4.27412 8.30532 4.28176 8.28319 4.29077 8.26194Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div class="services__record-body">
-                            <img class="services__record-body-icon" src="./assets/img/roller-icon.png" alt="roller">
-                            <h3 class="services__record-body-title">Тампопечать</h3>
-                            <p class="services__record-body-text">Нанесем на изделия логотип, рисунок или надпись</p>
-                            <a href="#" class="services__record-body-btn btn__more-l">
-                                Подробнее
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="services__record">
-                        <div class="services__record-img">
-                            <img src="./assets/img/services-5.png" alt="img">
+                        <div class="vacancies__card">
+                            <div class="vacancies__card-head">
+                                <h3 class="vacancies__card-head-title">Менеджер по закупкам оклад + бонуc</h3>
+                                <div class="vacancies__card-head-info">
+                                    <span class="label-rew">Улан-Удэ</span>
+                                    <p class="vacancies__card-head-price">от 45000₽</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__card-body">
+                                <p class="vacancies__card-body-text">Организация закупок товара с поставщиками Азии и Европы. Умение вести переговоры с поставщиками, получать наиболее выгодные условия. Заключать Договора, контроль за их выполнением согласно техническим заданиям.</p>
+                                <button class="vacancies__card-body-btn btn__large">
+                                    <span>Откликнуться</span>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3899 10.2882C11.6865 7.4371 11.6865 4.56288 11.3899 1.71175C11.2841 0.695048 10.1118 0.180038 9.29147 0.789851L6.55571 2.82346C5.72208 3.44313 4.71099 3.77776 3.67226 3.77776H1.11947C0.659229 3.77776 0.286133 4.15086 0.286133 4.6111V7.38887C0.286133 7.84911 0.659228 8.22221 1.11947 8.22221H1.53565L0.97208 10.3255C0.909279 10.5599 1.02382 10.8055 1.24373 10.908L3.69783 12.0524C3.83178 12.1149 3.9865 12.1149 4.12045 12.0524C4.2544 11.99 4.35385 11.8715 4.3921 11.7287L5.2339 8.58708C5.24284 8.55371 5.24818 8.52022 5.25017 8.48703C5.71516 8.64763 6.15585 8.87928 6.55571 9.17652L9.29147 11.2101C10.1118 11.8199 11.2841 11.3049 11.3899 10.2882ZM10.3952 1.81523C10.6847 4.59756 10.6847 7.40242 10.3952 10.1847C10.3697 10.4305 10.0863 10.555 9.88804 10.4076L7.15229 8.37396C6.14617 7.62607 4.92589 7.22221 3.67226 7.22221L1.28613 7.22221L1.28613 4.77776H3.67226C4.9259 4.77776 6.14617 4.3739 7.15228 3.62601L9.88804 1.59241C10.0863 1.44502 10.3697 1.56949 10.3952 1.81523ZM4.29077 8.26194C4.0865 8.23558 3.87993 8.22221 3.67226 8.22221H2.57093L2.04659 10.1791L3.5804 10.8943L4.26797 8.32826C4.27412 8.30532 4.28176 8.28319 4.29077 8.26194Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div class="services__record-body">
-                            <img class="services__record-body-icon" src="./assets/img/flash-icon.png" alt="flash">
-                            <h3 class="services__record-body-title">Запись на USB</h3>
-                            <p class="services__record-body-text">Накопители с записью презентации или иной документации компании</p>
-                            <a href="#" class="services__record-body-btn btn__more-l">
-                                Подробнее
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="services__record">
-                        <div class="services__record-img">
-                            <img src="./assets/img/services-6.png" alt="img">
+                        <div class="vacancies__card">
+                            <div class="vacancies__card-head">
+                                <h3 class="vacancies__card-head-title">Дизайнер оклад + бонус</h3>
+                                <div class="vacancies__card-head-info">
+                                    <span class="label-rew">Москва</span>
+                                    <p class="vacancies__card-head-price">от 35800₽</p>
+                                </div>
+                            </div>
+                            <div class="vacancies__card-body">
+                                <p class="vacancies__card-body-text">Коммуникабельность‚ аккуратность‚ внимательность, позитивный настрой‚ легкая обучаемость‚ самозадачность, стрессоустойчивость, активная жизненная позиция, умение решать конфликтные ситуации с клиентами.</p>
+                                <button class="vacancies__card-body-btn btn__large">
+                                    <span>Откликнуться</span>
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.3899 10.2882C11.6865 7.4371 11.6865 4.56288 11.3899 1.71175C11.2841 0.695048 10.1118 0.180038 9.29147 0.789851L6.55571 2.82346C5.72208 3.44313 4.71099 3.77776 3.67226 3.77776H1.11947C0.659229 3.77776 0.286133 4.15086 0.286133 4.6111V7.38887C0.286133 7.84911 0.659228 8.22221 1.11947 8.22221H1.53565L0.97208 10.3255C0.909279 10.5599 1.02382 10.8055 1.24373 10.908L3.69783 12.0524C3.83178 12.1149 3.9865 12.1149 4.12045 12.0524C4.2544 11.99 4.35385 11.8715 4.3921 11.7287L5.2339 8.58708C5.24284 8.55371 5.24818 8.52022 5.25017 8.48703C5.71516 8.64763 6.15585 8.87928 6.55571 9.17652L9.29147 11.2101C10.1118 11.8199 11.2841 11.3049 11.3899 10.2882ZM10.3952 1.81523C10.6847 4.59756 10.6847 7.40242 10.3952 10.1847C10.3697 10.4305 10.0863 10.555 9.88804 10.4076L7.15229 8.37396C6.14617 7.62607 4.92589 7.22221 3.67226 7.22221L1.28613 7.22221L1.28613 4.77776H3.67226C4.9259 4.77776 6.14617 4.3739 7.15228 3.62601L9.88804 1.59241C10.0863 1.44502 10.3697 1.56949 10.3952 1.81523ZM4.29077 8.26194C4.0865 8.23558 3.87993 8.22221 3.67226 8.22221H2.57093L2.04659 10.1791L3.5804 10.8943L4.26797 8.32826C4.27412 8.30532 4.28176 8.28319 4.29077 8.26194Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <div class="services__record-body">
-                            <img class="services__record-body-icon" src="./assets/img/fire-icon.png" alt="fire">
-                            <h3 class="services__record-body-title">Услуги дизайнера</h3>
-                            <p class="services__record-body-text">В любой вещи в первую очередь люди смотрят на ее оформление</p>
-                            <a href="#" class="services__record-body-btn btn__more-l">
-                                Подробнее
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </a>
-                        </div>
+
                     </div>
 
                 </div>
 
+            </div>
+
+        </div>
+    </section>
+
+    <section class="history__section">
+        <div class="container">
+
+            <div class="history__wrap">
+
+                <div class="history__content">
+                    <h1 class="history__content-title"><span class="underline-style">История компании</span> компании</h1>
+                    <p class="history__content-text">Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для системы массового участия. Учитывая ключевые сценарии поведения, выбранный нами инновационный путь способствует повышению качества первоочередных требований. Имеется спорная точка зрения, гласящая примерно следующее.</p>
+                </div>
+
+                <div class="history__tree">
+
+                    <div class="history__tree-item">
+                        <p class="history__tree-item-text">Коммуникабельность‚ аккуратность‚ внимательность, позитивный настрой‚ легкая обучаемость‚ самозадачность, стрессоустойчивость.</p>
+                        <h2 class="history__tree-item-year">2002</h2>
+                        <img src="./assets/img/history-img-1.png" alt="img">
+                    </div>
+
+                    <div class="history__tree-item">
+                        <p class="history__tree-item-text">Независимые государства рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Внезапно, интерактивные прототипы и по сей день остаются уделом либералов, которые жаждут быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                        <h2 class="history__tree-item-year">2010</h2>
+                        <img src="./assets/img/history-img-2.png" alt="img">
+                    </div>
+
+                    <div class="history__tree-item">
+                        <p class="history__tree-item-text">Значимость этих проблем настолько очевидна, что базовый вектор развития требует определения и уточнения новых принципов формирования материально-технической и кадровой базы. Господа, понимание сути ресурсосберегающих технологий говорит о возможностях приоритизации разума над эмоциями.</p>
+                        <h2 class="history__tree-item-year">2017</h2>
+                        <img src="./assets/img/history-img-3.png" alt="img">
+                    </div>
+
+                    <div class="history__tree-item">
+                        <p class="history__tree-item-text">Идейные соображения высшего порядка, а также понимание сути ресурсосберегающих технологий предопределяет высокую востребованность направлений прогрессивного развития. Повседневная практика показывает, что разбавленное изрядной долей эмпатии, рациональное мышление в значительной степени обусловливает.</p>
+                        <h2 class="history__tree-item-year">2020</h2>
+                        <img src="./assets/img/history-img-4.png" alt="img">
+                    </div>
+
+                    <div class="history__tree-item">
+                        <p class="history__tree-item-text">Как уже неоднократно упомянуто, представители современных социальных резервов ассоциативно распределены по отраслям.</p>
+                        <h2 class="history__tree-item-year">2021</h2>
+                        <img src="./assets/img/history-img-5.png" alt="img">
+                    </div>
+
+                </div>
+            
             </div>
 
         </div>
@@ -198,7 +242,7 @@ title: Reklem
         <div class="container">
 
             <div class="question__wrap">
-                <h1 class="question__title">Дополнительные <span class="underline-style">услуги</span></h1>
+                <h1 class="question__title">Быстрые <span class="underline-style">ссылки</span></h1>
 
                 <div class="question__wrap-content">
 
@@ -208,7 +252,7 @@ title: Reklem
 
                         <div class="question__col-record drop__wrap">
                             <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Полимерная заливка
+                                Гарантия
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -229,7 +273,7 @@ title: Reklem
 
                         <div class="question__col-record drop__wrap">
                             <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Клише
+                                Обмен и возврат
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -250,7 +294,7 @@ title: Reklem
 
                         <div class="question__col-record drop__wrap">
                             <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Полноцветная печать
+                                Портфолио
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -269,26 +313,6 @@ title: Reklem
                             </ul>
                         </div>
 
-                        <div class="question__col-record drop__wrap">
-                            <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Цифровая печать на текстиле
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </p>
-                            <ul class="question__col-record-drop dropdown">
-                                <li class="dropdown__point">Ясность нашей позиции очевидна: реализация намеченных
-                                    плановых заданий не даёт нам иного выбора, кроме определения инновационных методов
-                                    управления процессами. Противоположная точка зрения подразумевает, что диаграммы
-                                    связей лишь добавляют фракционных разногласий и в равной степени предоставлены сами
-                                    себе. Но повышение уровня гражданского сознания создаёт необходимость включения в
-                                    производственный план целого ряда внеочередных мероприятий с учётом комплекса
-                                    укрепления моральных ценностей!</li>
-                            </ul>
-                        </div>
 
                     </div>
 
@@ -298,7 +322,7 @@ title: Reklem
 
                         <div class="question__col-record drop__wrap">
                             <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Печать на сумках
+                                Диллерам
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -319,49 +343,7 @@ title: Reklem
 
                         <div class="question__col-record drop__wrap">
                             <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Печать на футболках
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </p>
-                            <ul class="question__col-record-drop dropdown">
-                                <li class="dropdown__point">Ясность нашей позиции очевидна: реализация намеченных
-                                    плановых заданий не даёт нам иного выбора, кроме определения инновационных методов
-                                    управления процессами. Противоположная точка зрения подразумевает, что диаграммы
-                                    связей лишь добавляют фракционных разногласий и в равной степени предоставлены сами
-                                    себе. Но повышение уровня гражданского сознания создаёт необходимость включения в
-                                    производственный план целого ряда внеочередных мероприятий с учётом комплекса
-                                    укрепления моральных ценностей!</li>
-                            </ul>
-                        </div>
-
-                        <div class="question__col-record drop__wrap">
-                            <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Сублимационная печать
-                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
-                                        fill="#000000" />
-                                </svg>
-                            </p>
-                            <ul class="question__col-record-drop dropdown">
-                                <li class="dropdown__point">Ясность нашей позиции очевидна: реализация намеченных
-                                    плановых заданий не даёт нам иного выбора, кроме определения инновационных методов
-                                    управления процессами. Противоположная точка зрения подразумевает, что диаграммы
-                                    связей лишь добавляют фракционных разногласий и в равной степени предоставлены сами
-                                    себе. Но повышение уровня гражданского сознания создаёт необходимость включения в
-                                    производственный план целого ряда внеочередных мероприятий с учётом комплекса
-                                    укрепления моральных ценностей!</li>
-                            </ul>
-                        </div>
-
-                        <div class="question__col-record drop__wrap">
-                            <p class="question__col-record-name drop__trigger --reverse-icon">
-                                Шелкография на футболках
+                                Доставка
                                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
