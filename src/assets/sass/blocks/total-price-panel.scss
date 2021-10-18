@@ -18,3 +18,11 @@
 .total__price.total__price-l .price-prefix {
     color: #ffffff;
 }
+
+#total-g .total__price-row .total-name span {
+    color: var(--green-two);
+}
+
+#total-o .total__price-row .total-name span {
+    color: var(--orange-two);
+}

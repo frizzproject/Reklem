@@ -1,0 +1,145 @@
+---
+layout: default
+title: Reklem
+---
+
+<main class="main main-pattern">
+
+    <div class="breadcrambs">
+        <div class="container">
+            <p class="breadcrambs__path">Главная / Корзина / Оформление заказа / </p>
+        </div>
+    </div>
+
+    <section class="making__section">
+        <div class="container">
+            <div class="making__wrap">
+
+                <h1 class="making__title"><span class="underline-style">Оформление</span> заказа</h1>
+
+                <div class="making__content">
+                    <form id="makingForm" action="/">
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="makingName" class="form__field-label">ФИО / Организация</label>
+                                <input type="text" name="makingName" id="makingName" class="form__field-input" placeholder="Иванов Иван Иванович">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="makingInn" class="form__field-label">ИНН <span class="not-important">(не обязательно)</span></label>
+                                <input type="text" name="makingInn" id="makingInn" class="form__field-input" placeholder="0000000000">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field form-col-2">
+                                <label for="makingPhone" class="form__field-label">Телефон</label>
+                                <input type="text" name="makingPhone" id="makingPhone" class="form__field-input" placeholder="+7 000 000 00 00">
+                            </div>
+
+                            <div class="form__field form-col-2">
+                                <label for="makinMail" class="form__field-label">Почта</label>
+                                <input type="text" name="makinMail" id="makinMail" class="form__field-input" placeholder="ex@mail.com">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row form__row-consist">
+
+                            <div class="form__field form-col-auto radio__field">
+                                <input type="radio" class="form__field-radio" id="pickupRadio" name="pickupRadio">
+                                <label for="pickupRadio" class="form__field-label">Самовывоз</label>
+                            </div>
+
+                            <div class="form__field form-col-auto radio__field">
+                                <input type="radio" class="form__field-radio" id="deliveryRadio" name="deliveryRadio">
+                                <label for="deliveryRadio" class="form__field-label">Доставка</label>
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="makingAddress" class="form__field-label">Адрес</label>
+                                <input type="text" name="makingAddress" id="makingAddress" class="form__field-input" placeholder="Москва, ул. Пушкина д. 32 корп. 3">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="makingComm" class="form__field-label">Комментарий</label>
+                                <textarea type="text" name="makingComm" id="makingComm" class="form__field-textarea" placeholder="Что нам следует знать еще"></textarea>
+                            </div>
+
+                        </div>
+
+                    </form>
+                    <div class="making__totals">
+                        <div id="total-g" class="total__price total__price-l">
+                            <div class="total__price-row">
+                                <span class="total-name">+ <span>Продукт</span></span>
+                                <span class="old-price">34039₽</span>
+                            </div>
+                            <div class="total__price-row">
+                                <span class="price-prefix">за 2 позиции, 67 шт</span>
+                                <h2 class="total-price">22209₽</h2>
+                            </div>
+                        </div>
+                        <div id="total-g" class="total__price total__price-l">
+                            <div class="total__price-row">
+                                <span class="total-name">+ <span>Доставка</span></span>
+                                <span class="old-price"></span>
+                            </div>
+                            <div class="total__price-row">
+                                <span class="price-prefix">по России</span>
+                                <h2 class="total-price">768₽</h2>
+                            </div>
+                        </div>
+                        <div id="total-o" class="total__price total__price-l">
+                            <div class="total__price-row">
+                                <span class="total-name"><span>Итог</span></span>
+                                <span class="old-price">37039₽</span>
+                            </div>
+                            <div class="total__price-row">
+                                <span class="price-prefix">за 2 позиции, 67 шт</span>
+                                <h2 class="total-price">23479₽</h2>
+                            </div>
+                        </div>
+
+                        <div class="making__send">
+                            <button type="submit" form="makingForm" class="making__send-btn main__btn">Отправить заказ</button>
+                            <p class="making__send-info">С вами свяжется специалист для уточнения заказа и оплаты.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- empty -->
+                <div class="empty _isHidden">
+                    <div class="empty-icon">
+                        <img src="{{root}}assets/img/svg/check-empty.svg" alt="empty">
+                    </div>
+                    <div class="empty-info">
+                        <h3 class="empty-info-title">Заявка оформлена, ожидайте звонка специалиста</h3>
+                        <p class="empty-info-time">Пн-Пт: <span class="week-time">9:30 - 18:00</span> / Сб-Вс: <span class="weekend-time">Выходно</span></p>
+                        <div class="empty-info-btns">
+                            <a href="./catalog.html" class="main__btn">В каталог</a>
+                            <a href="/" class="btn__large">В каталог</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>

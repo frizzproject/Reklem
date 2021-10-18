@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
   /* accordions init */
   accordions();
 
+  /* show form modal */
+  formModal();
+
   /* priceSlider init */
   priceSlider();
 
@@ -45,80 +48,83 @@ function priceSlider() {
     document.getElementById("priceTo"),
   ];
 
-  noUiSlider.create(priceSlider, {
-    start: [70, 35000],
-    connect: true,
-    range: {
-      min: [70],
-      max: [35000],
-    },
-    format: wNumb({
-      decimals: 0,
-      thousand: "",
-      suffix: "₽",
-    }),
-  });
-
-  priceSlider.noUiSlider.on("update", function (values, handle) {
-    sliderValues[handle].value = values[handle];
-  });
-
-  sliderValues.forEach(function (input, handle) {
-    input.addEventListener("change", function () {
-      priceSlider.noUiSlider.setHandle(handle, this.value);
+  if (priceSlider) {
+    noUiSlider.create(priceSlider, {
+      start: [70, 35000],
+      connect: true,
+      range: {
+        min: [70],
+        max: [35000],
+      },
+      format: wNumb({
+        decimals: 0,
+        thousand: "",
+        suffix: "₽",
+      }),
     });
-
-    input.addEventListener("keydown", function (e) {
-      var values = priceSlider.noUiSlider.get();
-      var value = Number(values[handle]);
-
-      // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
-      var steps = priceSlider.noUiSlider.steps();
-
-      // [down, up]
-      var step = steps[handle];
-
-      var position;
-
-      // 13 is enter,
-      // 38 is key up,
-      // 40 is key down.
-      switch (e.key) {
-        case 'Enter':
-          priceSlider.noUiSlider.setHandle(handle, this.value);
-          break;
-
-        case 'ArrowUp':
-          // Get step to go increase slider value (up)
-          position = step[1];
-
-          // false = no step is set
-          if (position === false) {
-            position = 1;
-          }
-
-          // null = edge of slider
-          if (position !== null) {
-            priceSlider.noUiSlider.setHandle(handle, value + position);
-          }
-
-          break;
-
-        case 'ArrowDown':
-          position = step[0];
-
-          if (position === false) {
-            position = 1;
-          }
-
-          if (position !== null) {
-            priceSlider.noUiSlider.setHandle(handle, value - position);
-          }
-
-          break;
-      }
+  
+    priceSlider.noUiSlider.on("update", function (values, handle) {
+      sliderValues[handle].value = values[handle];
     });
-  });
+  
+    sliderValues.forEach(function (input, handle) {
+      input.addEventListener("change", function () {
+        priceSlider.noUiSlider.setHandle(handle, this.value);
+      });
+  
+      input.addEventListener("keydown", function (e) {
+        var values = priceSlider.noUiSlider.get();
+        var value = Number(values[handle]);
+  
+        // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+        var steps = priceSlider.noUiSlider.steps();
+  
+        // [down, up]
+        var step = steps[handle];
+  
+        var position;
+  
+        // 13 is enter,
+        // 38 is key up,
+        // 40 is key down.
+        switch (e.key) {
+          case 'Enter':
+            priceSlider.noUiSlider.setHandle(handle, this.value);
+            break;
+  
+          case 'ArrowUp':
+            // Get step to go increase slider value (up)
+            position = step[1];
+  
+            // false = no step is set
+            if (position === false) {
+              position = 1;
+            }
+  
+            // null = edge of slider
+            if (position !== null) {
+              priceSlider.noUiSlider.setHandle(handle, value + position);
+            }
+  
+            break;
+  
+          case 'ArrowDown':
+            position = step[0];
+  
+            if (position === false) {
+              position = 1;
+            }
+  
+            if (position !== null) {
+              priceSlider.noUiSlider.setHandle(handle, value - position);
+            }
+  
+            break;
+        }
+      });
+    });
+  }
+
 }
 
 /* product sliders */
@@ -381,6 +387,24 @@ function navigation() {
 
       document.documentElement.classList.remove("_open");
     });
+  });
+}
+
+/* call form */
+function formModal() {
+  const modal = document.querySelector('#contactsFormModal');
+  const modalBtn = document.querySelector('#formModalBtn');
+  const modalBtnClose = document.querySelector('.form-modal__close');
+  
+  modalBtn.addEventListener('click', () => {
+    if (!modal.classList.contains(IS_ACTIVE)) {
+      modal.classList.add(IS_ACTIVE);
+    } else {
+      modal.classList.remove(IS_ACTIVE);
+    }   
+  });
+  modalBtnClose.addEventListener('click', () => {
+    modal.classList.remove(IS_ACTIVE);
   });
 }
 
