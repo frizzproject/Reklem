@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
   /* tabs init */
   tabs();
 
+  /* popups init */
+  popups()
+
   /* show form modal */
   formModal();
 
@@ -324,6 +327,39 @@ function initSponsorsSlider() {
       },
     },
   });
+}
+
+/* popups */
+function popups() {
+  const popupTriggers = document.querySelectorAll(".modal__trigger");
+  const popups = document.querySelectorAll(".popup");
+
+  popupTriggers.forEach(trigger => {
+    trigger.addEventListener("click", function() {
+      let id = this.dataset.modal;
+      let popup = document.getElementById(id);
+      
+      // Удадение выбора у всех кнопок
+      popupTriggers.forEach((lastTrigger) => lastTrigger.classList.remove(IS_ACTIVE));
+      // Удадение выбора у всех popups
+      popups.forEach((lastPopup) => lastPopup.classList.remove(IS_ACTIVE));
+
+      // Добавление выбора на кнопку
+      this.classList.add(IS_ACTIVE);
+
+      // Показ popup
+      popup.classList.add(IS_ACTIVE);
+      // Вызов функции закрытия
+      closePopups(popup);
+    });
+  });
+
+  function closePopups(popup) {
+    popup.querySelector('.close__popup').addEventListener('click', function() {
+      popup.classList.remove(IS_ACTIVE)
+    })
+  }
+
 }
 
 /* navigation */

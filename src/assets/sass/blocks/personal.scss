@@ -1,6 +1,11 @@
 .personal__section {
     padding-top: 4.8rem;
     padding-bottom: 9rem;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        padding-bottom: 6rem;
+    }
 }
 
 .personal__content {
@@ -47,6 +52,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        /* MEDIA <= 480px */
+        @media only screen and (max-width: 480px) {
+            flex-direction: column;
+        }
     }
 
     &-row {
@@ -79,6 +89,12 @@
 
 .profile__btn {
     margin-right: 2.4rem;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
 
     &:last-child {
         margin-right: 0;
@@ -204,6 +220,11 @@
 
     &:last-child {
         margin-right: 0;
+
+        /* MEDIA <= 480px */
+        @media only screen and (max-width: 480px) {
+            margin-top: 0;
+        }
     }
 }
 
@@ -230,6 +251,25 @@
         &:last-child {
             text-align: right;
         }
+
+        /* MEDIA <= 480px */
+        @media only screen and (max-width: 480px) {
+            margin: 0;
+            text-align: center;
+            margin-bottom: 1rem;
+            max-width: 100%;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.personal__tabs-switch {
+    /* MEDIA <= 768px */
+    @media only screen and (max-width: 768px) {
+        padding: 1rem 1rem;
     }
 }
 
@@ -246,6 +286,21 @@
         font-size: var(--text-normal-size);
 
         color: #000000;
+    }
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 0.8rem 0rem;
+        display: none;
+    }
+}
+
+.profile__btn {
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        text-align: center;
     }
 }
 
@@ -264,6 +319,46 @@
         font-size: var(--text-lite-size);
 
         color: #000000;
+
+        /* MEDIA <= 480px */
+        @media only screen and (max-width: 480px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: right;
+
+            &::before {
+                font-style: normal;
+                font-weight: 500;
+                font-size: var(--text-lite-size);
+
+                color: #000000;
+                text-align: left;
+            }
+
+            &:nth-child(1)::before {
+                content: "ID заказа";
+            }
+            &:nth-child(2)::before {
+                content: "Дата создания";
+            }
+            &:nth-child(3)::before {
+                content: "Тип доставки";
+            }
+            &:nth-child(4)::before {
+                content: "Сумма";
+            }
+            &:nth-child(5)::before {
+                content: "Статус";
+            }
+        }
+    }
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -300,10 +395,20 @@
     display: flex;
     justify-content: space-between;
 
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+    }
+
     &-col {
         margin-right: 6.4rem;
 
         &:last-child {
+            margin-right: 0;
+        }
+
+        /* MEDIA <= 480px */
+        @media only screen and (max-width: 480px) {
             margin-right: 0;
         }
     }
