@@ -81,11 +81,23 @@
 @import "blocks/basket.scss";
 @import "blocks/login.scss";
 @import "blocks/sign-in.scss";
+@import "blocks/personal.scss";
 @import "blocks/password-rest.scss";
+@import "blocks/edit-profile.scss";
 @import "blocks/breadcrambs.scss";
 @import "blocks/sorts.scss";
 @import "blocks/tabs.scss";
 @import "blocks/empty.scss";
+@import "blocks/popups.scss";
+@import "blocks/desc-popup.scss";
+@import "blocks/call-popup.scss";
+@import "blocks/succ-popup.scss";
+@import "blocks/select-popup.scss";
+@import "blocks/rew-unlogin-popup.scss";
+@import "blocks/rew-popup.scss";
+@import "blocks/succ-rew-popup.scss";
+@import "blocks/response-popup.scss";
+@import "blocks/response-succ-popup.scss";
 /* Sections */
 @import "blocks/present-section.scss";
 @import "blocks/about-section.scss";

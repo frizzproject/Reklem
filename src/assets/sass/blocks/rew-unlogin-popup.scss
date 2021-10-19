@@ -1,0 +1,43 @@
+#popupRewUnlogin {
+    max-width: 44.8rem;
+    max-height: 26.4rem;
+    width: 100%;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+}
+
+.popup__content .product__sidebar {
+    max-width: 312px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.unlogin__popup-info-btns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3.2rem;
+}
+
+.unlogin__popup-info {
+    text-align: center;
+
+    &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--h3-size);
+
+        color: #000000;
+    }
+}
+
+.unlogin__btn {
+    margin-right: 2.4rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

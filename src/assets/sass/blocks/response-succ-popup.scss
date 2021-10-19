@@ -1,0 +1,13 @@
+#popupSuccResponse {
+    max-width: 44.8rem;
+    max-height: 33.8rem;
+    width: 100%;
+
+    background: url(../img/pattern.png) no-repeat bottom 3rem right -80%;
+    background-color: #ffffff;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+}

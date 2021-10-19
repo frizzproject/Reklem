@@ -1,9 +1,9 @@
-.signin__section {
+.edit__section {
     padding-top: 4.8rem;
     padding-bottom: 9rem;
 }
 
-.signin__content {
+.edit__content {
     margin-top: 12rem;
 
     /* MEDIA <= 480px */
@@ -12,7 +12,7 @@
     }
 }
 
-.signin__title {
+.edit__title {
     color: #000000;
 
     font-style: normal;
@@ -26,28 +26,27 @@
     }
 }
 
-#signIndividualForm, #signEploueesForm {
-    display: flex;
-    flex-direction: column;
-    max-width: 44.8rem;
-    margin: 0 auto;
-}
-
-#signEntityForm {
+#editEntityForm {
     display: flex;
     flex-direction: column;
     max-width: 44.8rem;
     margin: 0 auto;
 
-    #entitySocField {
+    #editSocField {
         max-width: 25%;
         width: 100%;
         padding: 0 0.5rem;
     }
 
-    #entityNameField {
+    #editNameField {
         max-width: 75%;
         width: 100%;
         padding: 0 0.5rem;
     }
 }
+
+.edit__btns {
+    justify-content: center;
+    margin-top: 5rem;
+}
+

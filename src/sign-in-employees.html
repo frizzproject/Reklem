@@ -7,51 +7,61 @@ title: Reklem
 
     <div class="breadcrambs">
         <div class="container">
-            <p class="breadcrambs__path">Главная / Сброс пароля / </p>
+            <p class="breadcrambs__path">Главная / Личный кабинет / Регистрация сотрудника </p>
         </div>
     </div>
 
-    <section class="passrest__section">
+    <section class="signin__section">
         <div class="container">
-            <div class="passrest__wrap">
+            <div class="signin__wrap">
 
-                <h1 class="passrest__title"><span class="underline-style">Сброс пароля</span></h1>
+                <h1 class="signin__title"><span class="underline-style">Регистрация сотрудника</span></h1>
 
-                <div class="passrest__content">
+                <div class="signin__content">
 
-                    <form id="passRestFormLogin" action="/">
+                    <form id="signEploueesForm" action="/">
 
                         <div class="form__row">
 
                             <div class="form__field">
-                                <label for="login" class="form__field-label">Логин</label>
-                                <input type="text" name="login" id="login" class="form__field-input"
-                                    placeholder="ex@mail.com">
-                                <span class="form__field-err _isHidden">Не найдено</span>
+                                <label for="individualName" class="form__field-label">ФИО</label>
+                                <input type="text" name="individualName" id="individualName" class="form__field-input"
+                                placeholder="Иванов Иван Иванович">
                             </div>
 
                         </div>
 
                         <div class="form__row">
 
-                            <div class="form__btns">
-                                <button id="loginBtn" class="login__btn main__btn form__btn"
-                                    type="submit">Войти</button>
-                                <a id="loginBtn" class="login__btn btn__large form__btn"
-                                href="./login.html">Авторизация</a>
+                            <div class="form__field">
+                                <label for="individualAddress" class="form__field-label">Адрес</label>
+                                <input type="text" name="individualAddress" id="individualAddress" class="form__field-input"
+                                placeholder="Москва, ул. Пушкина д. 32 корп. 3">
+                            </div>
+
+                        </div>
+                        
+                        <div class="form__row">
+
+                            <div class="form__field form-col-2">
+                                <label for="individualPhone" class="form__field-label">Телефон</label>
+                                <input type="text" name="individualPhone" id="individualPhone" class="form__field-input"
+                                placeholder="+7 000 000 00 00">
+                            </div>
+
+                            <div class="form__field form-col-2">
+                                <label for="individualMail" class="form__field-label">Почта</label>
+                                <input type="text" name="individualMail" id="individualMail" class="form__field-input"
+                                placeholder="ex@mail.com">
                             </div>
 
                         </div>
 
-                    </form>
-
-                    <form id="passRestFormPass" class="_isHidden" action="/">
-
                         <div class="form__row">
 
                             <div class="form__field">
-                                <label for="password" class="form__field-label">Пароль</label>
-                                <input type="password" name="password" id="password" class="form__field-input"
+                                <label for="individualPass" class="form__field-label">Пароль учетной записи</label>
+                                <input type="password" name="individualPass" id="individualPass" class="form__field-input"
                                 placeholder="••••••••••••">
                                 <button type="button" class="show__pass">
                                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
@@ -70,9 +80,9 @@ title: Reklem
 
                         <div class="form__row">
 
-                            <div class="form__btns">
-                                <button id="loginBtn" class="login__btn main__btn form__btn"
-                                type="submit">Изменить</button>
+                            <div class="form__btns edit__btns">
+                                <button id="addNewBtn" class="addnew__btn main__btn form__btn"
+                                type="submit">Добавить</button>
                             </div>
 
                         </div>

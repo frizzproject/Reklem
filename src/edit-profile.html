@@ -1,0 +1,177 @@
+---
+layout: default
+title: Reklem
+---
+
+<main class="main main-pattern">
+
+    <div class="breadcrambs">
+        <div class="container">
+            <p class="breadcrambs__path">Главная / Личный кабинет / Редактирование профиля / </p>
+        </div>
+    </div>
+
+    <section class="edit__section">
+        <div class="container">
+            <div class="edit__wrap">
+
+                <h1 class="edit__title"><span class="underline-style">Редактирование профиля</span></h1>
+
+                <div class="edit__content">
+
+                    <form id="editEntityForm" action="/">
+
+                        <div class="form__row">
+
+                            <div id="editSocField" class="form__field">
+                                <label for="editSoc" class="form__field-label">Общество</label>
+                                <input type="text" name="editSoc" id="editSoc" class="form__field-input"
+                                placeholder="ОАО">
+                            </div>
+
+                            <div id="editNameField" class="form__field">
+                                <label for="editName" class="form__field-label">Название</label>
+                                <input type="text" name="editName" id="editName" class="form__field-input"
+                                placeholder="Строй групп">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field form-col-2">
+                                <label for="editInn" class="form__field-label">ИНН</label>
+                                <input type="text" name="editInn" id="editInn" class="form__field-input"
+                                placeholder="0000000000">
+                            </div>
+
+                            <div class="form__field form-col-2">
+                                <label for="editKpp" class="form__field-label">КПП</label>
+                                <input type="text" name="editKpp" id="editKpp" class="form__field-input"
+                                placeholder="0000000000">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="editSpec" class="form__field-label">Специализация</label>
+                                <div id="editSpec" class="form__drop drop__wrap">
+                                    <p class="form__drop-name drop__trigger">
+                                        Другое
+                                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.76877 0.899655C10.0771 1.2103 10.0771 1.71395 9.76877 2.0246L5.55824 6.26702C5.24993 6.57767 4.75007 6.57767 4.44176 6.26702L0.231232 2.0246C-0.0770772 1.71395 -0.0770772 1.2103 0.231231 0.899655C0.53954 0.589011 1.03941 0.589011 1.34772 0.899655L5 4.57961L8.65228 0.899655C8.96059 0.589011 9.46046 0.589011 9.76877 0.899655Z"
+                                                fill="black" />
+                                        </svg>
+                                    </p>
+                                    <ul class="form__drop-content dropdown">
+                                        <li class="dropdown__point">...</li>
+                                        <li class="dropdown__point">...</li>
+                                        <li class="dropdown__point">...</li>
+                                        <li class="dropdown__point">...</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="editActivity" class="form__field-label">Компания занимается</label>
+                                <input type="text" name="editActivity" id="editActivity" class="form__field-input"
+                                placeholder="Производство пиломатериалов">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="editAddress" class="form__field-label">Адрес</label>
+                                <input type="text" name="editAddress" id="editAddress" class="form__field-input"
+                                placeholder="Москва, ул. Пушкина д. 32 корп. 3">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="editSite" class="form__field-label">Сайт компании <span class="not-important">(не обязательно)</span></label>
+                                <input type="text" name="editSite" id="editSite" class="form__field-input"
+                                placeholder="site.ru">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field form-col-2">
+                                <label for="editPhone" class="form__field-label">Телефон</label>
+                                <input type="text" name="editPhone" id="editPhone" class="form__field-input"
+                                placeholder="+7 000 000 00 00">
+                            </div>
+
+                            <div class="form__field form-col-2">
+                                <label for="editMail" class="form__field-label">Почта</label>
+                                <input type="text" name="editMail" id="editMail" class="form__field-input"
+                                placeholder="ex@mail.com">
+                            </div>
+
+                        </div>
+
+                        <div class="form__block">
+                            <div class="form__row">
+
+                                <div class="form__field">
+                                    <label for="editContactPers" class="form__field-label">ФИО контактного лица</label>
+                                    <input type="text" name="editContactPers" id="editContactPers" class="form__field-input"
+                                    placeholder="Иванов Иван Иванович">
+                                </div>
+
+                            </div>
+
+                            <div class="form__row">
+
+                                <div class="form__field form-col-2">
+                                    <label for="editContactPhone" class="form__field-label">Телефон</label>
+                                    <input type="text" name="editContactPhone" id="editContactPhone" class="form__field-input"
+                                    placeholder="+7 000 000 00 00">
+                                </div>
+                                
+                                <div class="form__field form-col-2">
+                                    <label for="editContactMail" class="form__field-label">Почта</label>
+                                    <input type="text" name="editContactMail" id="editContactMail" class="form__field-input"
+                                    placeholder="ex@mail.com">
+                                </div>
+
+                            </div>
+
+                            <div class="form__row">
+
+                                <div class="form__btns edit__btns">
+                                    <button id="editSaveBtn" class="editsave__btn main__btn form__btn"
+                                    type="submit">Сохранить</button>
+                                    <button id="editCancelBtn" class="editcancel__btn btn__large form__btn"
+                                    type="submit">Отменить</button>
+                                </div>
+    
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- iclude form modal -->
+    {{> contacts-form-modal }}
+
+</main>

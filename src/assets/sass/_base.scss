@@ -52,8 +52,6 @@ body {
     max-width: 1100px;
 }
 
-
-
 .filters .container {
     max-width: 100%;
     padding: 2rem 3.4rem;
@@ -99,7 +97,8 @@ a {
     list-style: none;
 }
 
-button, label {
+button,
+label {
     cursor: pointer;
 }
 
@@ -302,6 +301,12 @@ html._open body .wrapper .main::before {
     justify-content: center;
     align-items: center;
 
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--text-lite-size);
+
+    color: #000000;
+
     span {
         margin-right: 1rem;
     }
@@ -462,5 +467,3 @@ svg path {
 .product__counter._disabled {
     box-shadow: none;
 }
-
-

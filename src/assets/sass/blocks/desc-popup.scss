@@ -1,0 +1,21 @@
+#popupDesc {
+    max-width: 44.8rem;
+    max-height: 31.8rem;
+    width: 100%;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+}
+
+.popup__desc-btns {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        justify-content: space-around;
+    }
+}

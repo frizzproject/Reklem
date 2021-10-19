@@ -1,0 +1,41 @@
+#popupSuccAdd {
+    max-width: 44.8rem;
+    max-height: 33.8rem;
+    width: 100%;
+
+    background: url(../img/pattern.png) no-repeat bottom 3rem right -80%;
+    background-color: #ffffff;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+}
+
+.popup__succ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-icon {
+        margin-bottom: 2rem;
+        width: 5.4rem;
+        height: 5.4rem;
+        background: #ffffff;
+        box-shadow: 0px 9px 20px -4px rgba(0, 0, 0, 0.25);
+        border-radius: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-info {
+        font-style: normal;
+        font-weight: 600;
+        font-size: var(--h3-size);
+
+        color: #000000;
+        margin-bottom: 3.2rem;
+    }
+}

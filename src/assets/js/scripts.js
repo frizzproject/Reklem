@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
   /* accordions init */
   accordions();
 
+  /* tabs init */
+  tabs();
+
   /* show form modal */
   formModal();
 
@@ -37,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* show all filters */
   filtersShow();
-
 });
 
 /* price range */
@@ -62,69 +64,68 @@ function priceSlider() {
         suffix: "₽",
       }),
     });
-  
+
     priceSlider.noUiSlider.on("update", function (values, handle) {
       sliderValues[handle].value = values[handle];
     });
-  
+
     sliderValues.forEach(function (input, handle) {
       input.addEventListener("change", function () {
         priceSlider.noUiSlider.setHandle(handle, this.value);
       });
-  
+
       input.addEventListener("keydown", function (e) {
         var values = priceSlider.noUiSlider.get();
         var value = Number(values[handle]);
-  
+
         // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
         var steps = priceSlider.noUiSlider.steps();
-  
+
         // [down, up]
         var step = steps[handle];
-  
+
         var position;
-  
+
         // 13 is enter,
         // 38 is key up,
         // 40 is key down.
         switch (e.key) {
-          case 'Enter':
+          case "Enter":
             priceSlider.noUiSlider.setHandle(handle, this.value);
             break;
-  
-          case 'ArrowUp':
+
+          case "ArrowUp":
             // Get step to go increase slider value (up)
             position = step[1];
-  
+
             // false = no step is set
             if (position === false) {
               position = 1;
             }
-  
+
             // null = edge of slider
             if (position !== null) {
               priceSlider.noUiSlider.setHandle(handle, value + position);
             }
-  
+
             break;
-  
-          case 'ArrowDown':
+
+          case "ArrowDown":
             position = step[0];
-  
+
             if (position === false) {
               position = 1;
             }
-  
+
             if (position !== null) {
               priceSlider.noUiSlider.setHandle(handle, value - position);
             }
-  
+
             break;
         }
       });
     });
   }
-
 }
 
 /* product sliders */
@@ -390,20 +391,42 @@ function navigation() {
   });
 }
 
+/* tabs */
+function tabs() {
+  const tabsSwitch = document.querySelectorAll(".tab__switch");
+  const tabsBody = document.querySelectorAll(".tab__body");
+
+  tabsSwitch.forEach(itemSwitch => {
+    itemSwitch.addEventListener("click", function() {
+      let id = this.dataset.switch;
+      
+      // Удадение выбора у всех кнопок
+      tabsSwitch.forEach((lastSwitch) => lastSwitch.classList.remove(IS_ACTIVE));
+      // Удадение выбора у всех блоков контента
+      tabsBody.forEach((lastBody) => lastBody.classList.remove(IS_ACTIVE));
+
+      // Добавление выбора на кнопку
+      this.classList.add(IS_ACTIVE);
+      // Показ контента
+      document.getElementById(id).classList.add(IS_ACTIVE);
+    });
+  });
+}
+
 /* call form */
 function formModal() {
-  const modal = document.querySelector('#contactsFormModal');
-  const modalBtn = document.querySelector('#formModalBtn');
-  const modalBtnClose = document.querySelector('.form-modal__close');
-  
-  modalBtn.addEventListener('click', () => {
+  const modal = document.querySelector("#contactsFormModal");
+  const modalBtn = document.querySelector("#formModalBtn");
+  const modalBtnClose = document.querySelector(".form-modal__close");
+
+  modalBtn.addEventListener("click", () => {
     if (!modal.classList.contains(IS_ACTIVE)) {
       modal.classList.add(IS_ACTIVE);
     } else {
       modal.classList.remove(IS_ACTIVE);
-    }   
+    }
   });
-  modalBtnClose.addEventListener('click', () => {
+  modalBtnClose.addEventListener("click", () => {
     modal.classList.remove(IS_ACTIVE);
   });
 }
@@ -446,24 +469,28 @@ function accordions() {
 
 /* filters */
 function filtersShow() {
-  const filters = document.querySelector('.filters');
-  const allFilters = document.querySelector('#allFilters');
-  const closeFilters = document.querySelector('.filters__close');
-  
-  allFilters.addEventListener('click', () => {
-    if (!filters.classList.contains(IS_ACTIVE)) {
-      filters.classList.add(IS_ACTIVE);
-      document.documentElement.classList.add("_open");
-      document.documentElement.classList.add("_scroll-ban");
-    } else {
+  const filters = document.querySelector(".filters");
+  const allFilters = document.querySelector("#allFilters");
+  const closeFilters = document.querySelector(".filters__close");
+
+  if (allFilters) {
+
+    allFilters.addEventListener("click", () => {
+      if (!filters.classList.contains(IS_ACTIVE)) {
+        filters.classList.add(IS_ACTIVE);
+        document.documentElement.classList.add("_open");
+        document.documentElement.classList.add("_scroll-ban");
+      } else {
+        filters.classList.remove(IS_ACTIVE);
+        document.documentElement.classList.remove("_scroll-ban");
+        document.documentElement.classList.remove("_open");
+      }
+    });
+    closeFilters.addEventListener("click", () => {
       filters.classList.remove(IS_ACTIVE);
       document.documentElement.classList.remove("_scroll-ban");
       document.documentElement.classList.remove("_open");
-    }   
-  });
-  closeFilters.addEventListener('click', () => {
-    filters.classList.remove(IS_ACTIVE);
-    document.documentElement.classList.remove("_scroll-ban");
-    document.documentElement.classList.remove("_open");
-  });
+    });
+  }
+
 }
