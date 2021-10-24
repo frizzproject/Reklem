@@ -5,23 +5,26 @@ import wNumb from "./wNumb";
 const IS_ACTIVE = "_isActive";
 
 document.addEventListener("DOMContentLoaded", function () {
-  /* init products sliders */
+  /* init products slider */
   initProductsSlider();
 
-  /* init product preview sliders */
+  /* init product preview slider */
   initProductPreviewSlider();
 
-  /* init product sliders */
+  /* init product slider */
   initProductSlider();
 
-  /* init reviews sliders */
+  /* init reviews slider */
   initReviewsSlider();
 
-  /* init categories sliders */
+  /* init categories slider */
   initCategoriesSlider();
 
-  /* init sponsors sliders */
+  /* init sponsors slider */
   initSponsorsSlider();
+
+  /* init popup rew slider */
+  initPopupRewSlider();
 
   /* navigation init */
   navigation();
@@ -33,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   tabs();
 
   /* popups init */
-  popups()
+  popups();
 
   /* show form modal */
   formModal();
@@ -293,6 +296,27 @@ function initCategoriesSlider() {
   });
 }
 
+/* popup reviews sliders */
+function initPopupRewSlider() {
+  const popupRewSlider = new Swiper(".popup__review-slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    speed: 450,
+    slidesPerView: 1,
+
+    pagination: {
+      el: '.popup__review-pagination',
+      type: 'bullets',
+    },
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+
 /* reviews sliders */
 function initSponsorsSlider() {
   const sponsorsSlider = new Swiper(".sponsors__slider", {
@@ -334,13 +358,15 @@ function popups() {
   const popupTriggers = document.querySelectorAll(".modal__trigger");
   const popups = document.querySelectorAll(".popup");
 
-  popupTriggers.forEach(trigger => {
-    trigger.addEventListener("click", function() {
+  popupTriggers.forEach((trigger) => {
+    trigger.addEventListener("click", function () {
       let id = this.dataset.modal;
       let popup = document.getElementById(id);
-      
+
       // Удадение выбора у всех кнопок
-      popupTriggers.forEach((lastTrigger) => lastTrigger.classList.remove(IS_ACTIVE));
+      popupTriggers.forEach((lastTrigger) =>
+        lastTrigger.classList.remove(IS_ACTIVE)
+      );
       // Удадение выбора у всех popups
       popups.forEach((lastPopup) => lastPopup.classList.remove(IS_ACTIVE));
 
@@ -355,11 +381,10 @@ function popups() {
   });
 
   function closePopups(popup) {
-    popup.querySelector('.close__popup').addEventListener('click', function() {
-      popup.classList.remove(IS_ACTIVE)
-    })
+    popup.querySelector(".close__popup").addEventListener("click", function () {
+      popup.classList.remove(IS_ACTIVE);
+    });
   }
-
 }
 
 /* navigation */
@@ -432,12 +457,14 @@ function tabs() {
   const tabsSwitch = document.querySelectorAll(".tab__switch");
   const tabsBody = document.querySelectorAll(".tab__body");
 
-  tabsSwitch.forEach(itemSwitch => {
-    itemSwitch.addEventListener("click", function() {
+  tabsSwitch.forEach((itemSwitch) => {
+    itemSwitch.addEventListener("click", function () {
       let id = this.dataset.switch;
-      
+
       // Удадение выбора у всех кнопок
-      tabsSwitch.forEach((lastSwitch) => lastSwitch.classList.remove(IS_ACTIVE));
+      tabsSwitch.forEach((lastSwitch) =>
+        lastSwitch.classList.remove(IS_ACTIVE)
+      );
       // Удадение выбора у всех блоков контента
       tabsBody.forEach((lastBody) => lastBody.classList.remove(IS_ACTIVE));
 
@@ -510,7 +537,6 @@ function filtersShow() {
   const closeFilters = document.querySelector(".filters__close");
 
   if (allFilters) {
-
     allFilters.addEventListener("click", () => {
       if (!filters.classList.contains(IS_ACTIVE)) {
         filters.classList.add(IS_ACTIVE);
@@ -528,5 +554,4 @@ function filtersShow() {
       document.documentElement.classList.remove("_open");
     });
   }
-
 }
