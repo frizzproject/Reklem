@@ -7,9 +7,13 @@ const cssbeautify = require("gulp-cssbeautify");
 const removeComments = require('gulp-strip-css-comments');
 const groupMedia = require("gulp-group-css-media-queries");
 const rename = require("gulp-rename");
+<<<<<<< HEAD
 const gulpSass = require("gulp-sass");
 const dartSass = require("sass");
 const sass = gulpSass(dartSass);
+=======
+const sass = require("gulp-sass");
+>>>>>>> 95cf34a64adb30675b0a8c2193fb885d07fa2840
 const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger");
 const uglifyEs = require("gulp-uglify-es").default;
@@ -22,6 +26,10 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browsersync = require("browser-sync").create();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 95cf34a64adb30675b0a8c2193fb885d07fa2840
 /* Paths */
 var path = {
     build: {
