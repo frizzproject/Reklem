@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="description...">
+    
+    <!-- Favicons -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="assets/img/favicons/site.webmanifest"> -->
+    <!-- <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Reklem</title></head>
+<body>
+
+<div class="wrapper">
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <!-- logo -->
+                <div class="header__wrap-logo logo">
+                    <a href="/">
+                        <img class="logo__img" src="assets/img/svg/logo.svg" alt="Reklem">
+                    </a>
+                </div>
+    
+                <!-- navigation -->
+                <nav class="header__wrap-nav">
+    
+                    <button type="button" class="menu__nav-burger">
+                        <svg class="burger__icon" width="16" height="12" viewBox="0 0 16 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.75 6C15.75 5.58579 15.4142 5.25 15 5.25H1C0.585786 5.25 0.25 5.58579 0.25 6C0.25 6.41421 0.585786 6.75 1 6.75H15C15.4142 6.75 15.75 6.41421 15.75 6Z"
+                                fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.75 1C15.75 0.585786 15.4142 0.25 15 0.25H1C0.585786 0.25 0.25 0.585786 0.25 1C0.25 1.41421 0.585786 1.75 1 1.75H15C15.4142 1.75 15.75 1.41421 15.75 1Z"
+                                fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.75 11C15.75 10.5858 15.4142 10.25 15 10.25H1C0.585786 10.25 0.25 10.5858 0.25 11C0.25 11.4142 0.585786 11.75 1 11.75H15C15.4142 11.75 15.75 11.4142 15.75 11Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+    
+                    <!-- menu -->
+                    <div class="menu__nav">
+    
+                        <!-- menu  -->
+                        <div class="menu__nav-list">
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="about.html">О компании</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="./catalog.html">Каталог</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="#">Акции</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="./services.html">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__item-link" href="./contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <!-- sub menu  -->
+                        <div id="submenuPopap" class="submenu__nav-list submenu__list">
+    
+                            <div class="submenu__nav-list-head">
+                                <button type="button" class="nav__prev">
+                                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.26685 0.231231C6.5775 0.53954 6.5775 1.03941 6.26685 1.34772L2.5869 5L6.26685 8.65228C6.5775 8.96059 6.5775 9.46046 6.26685 9.76877C5.95621 10.0771 5.45256 10.0771 5.14191 9.76877L0.899487 5.55824C0.588843 5.24993 0.588843 4.75007 0.899487 4.44176L5.14191 0.231231C5.45256 -0.0770772 5.95621 -0.0770772 6.26685 0.231231Z"
+                                            fill="black" />
+                                    </svg>
+    
+                                </button>
+                                <div class="nav__title">
+                                    <h3 class="nav__title-name">Меню</h3>
+                                </div>
+                                <button type="button" class="nav__close">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.05373 12.9463L12.9463 7.05371" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path d="M7.05373 7.05373L12.9463 12.9463" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+    
+                            <div class="submenu__nav-list-body">
+                                <ul class="menu">
+                                    <li class="menu__item drop__wrap">
+                                        <a class="menu__item-link drop__trigger">
+                                            О компании
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.27958 0.277478C0.652353 -0.0924926 1.25674 -0.0924926 1.62951 0.277478L6.72042 5.33011C7.09319 5.70008 7.09319 6.29992 6.72042 6.66989L1.62951 11.7225C1.25674 12.0925 0.652353 12.0925 0.27958 11.7225C-0.0931933 11.3526 -0.0931933 10.7527 0.27958 10.3827L4.69552 6L0.27958 1.61726C-0.0931933 1.24729 -0.0931933 0.647448 0.27958 0.277478Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </a>
+                                        <ul class="menu__item-dropdown dropdown">
+                                            <li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+                                            <li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+                                            <li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+                                            <li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">Контакты</a>
+                                    </li>
+                                    <li class="menu__item drop__wrap">
+                                        <a class="menu__item-link drop__trigger">
+                                            Каталог
+                                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M0.27958 0.277478C0.652353 -0.0924926 1.25674 -0.0924926 1.62951 0.277478L6.72042 5.33011C7.09319 5.70008 7.09319 6.29992 6.72042 6.66989L1.62951 11.7225C1.25674 12.0925 0.652353 12.0925 0.27958 11.7225C-0.0931933 11.3526 -0.0931933 10.7527 0.27958 10.3827L4.69552 6L0.27958 1.61726C-0.0931933 1.24729 -0.0931933 0.647448 0.27958 0.277478Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </a>
+                                        <ul class="menu__item-dropdown dropdown">
+                                            <li class="menu__item"><a class="menu__item-link" href="#">Каталог</a></li>
+                                            <li class="menu__item"><a class="menu__item-link" href="#">Каталог</a></li>
+                                            <li class="menu__item"><a class="menu__item-link" href="#">Каталог</a></li>
+                                            <li class="menu__item"><a class="menu__item-link" href="#">Каталог</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">Акции</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">Вакансии</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">Производство</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">Диллерам</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">...</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">...</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">...</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__item-link" href="#">...</a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                        </div>
+    
+                        <!-- sub search  -->
+                        <div id="searchPopap" class="submenu__nav-list search__list">
+    
+                            <div class="submenu__nav-list-head">
+                                <button type="button" class="btn__samll nav__arrow _isHidden">
+                                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.26685 0.231231C6.5775 0.53954 6.5775 1.03941 6.26685 1.34772L2.5869 5L6.26685 8.65228C6.5775 8.96059 6.5775 9.46046 6.26685 9.76877C5.95621 10.0771 5.45256 10.0771 5.14191 9.76877L0.899487 5.55824C0.588843 5.24993 0.588843 4.75007 0.899487 4.44176L5.14191 0.231231C5.45256 -0.0770772 5.95621 -0.0770772 6.26685 0.231231Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                                <form id="search" class="search__form" action="/" method="POST">
+                                    <div class="search__form-field">
+                                        <input id="searchInput" class="search__form-input" placeholder="Поиск" type="text"
+                                            name="search">
+                                        <button type="submit" class="search__form-btn">
+                                            <img class="search__icon" src="assets/img/svg/search.svg" alt="menu">
+                                        </button>
+                                    </div>
+                                </form>
+                                <button type="button" class="nav__close">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.05373 12.9463L12.9463 7.05371" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path d="M7.05373 7.05373L12.9463 12.9463" stroke="black" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </button>
+                            </div>
+    
+                            <div class="submenu__nav-list-body">
+                                <ul class="search__results">
+    
+                                    <li class="search__results-category">
+                                        Услуги
+    
+                                        <ul class="search__results-category-list">
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/grav-icon.png" alt="img">
+                                                <a href="#">Гравировка</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/grav-icon.png" alt="img">
+                                                <a href="#">Гравировка</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/grav-icon.png" alt="img">
+                                                <a href="#">Гравировка</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/grav-icon.png" alt="img">
+                                                <a href="#">Гравировка</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+    
+                                    <li class="search__results-category">
+                                        Товары
+    
+                                        <ul class="search__results-category-list">
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/trinket-icon.png" alt="img">
+                                                <a href="#">Брелок для гравировки</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/mug-icon.png" alt="img">
+                                                <a href="#">Кружка с толстыми стенками</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/mug-icon.png" alt="img">
+                                                <a href="#">Кружка с толстыми стенками</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/mug-icon.png" alt="img">
+                                                <a href="#">Кружка с толстыми стенками</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/mug-icon.png" alt="img">
+                                                <a href="#">Кружка с толстыми стенками</a>
+                                            </li>
+                                            <li class="search__results-category-list-item">
+                                                <img src="assets/img/mug-icon.png" alt="img">
+                                                <a href="#">Кружка с толстыми стенками</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+    
+                                </ul>
+                                <div class="notfond__results _isHidden">
+                                    <div class="notfond__results-icon">
+                                        <img src="assets/img/loupe-icon.png" alt="Search">
+                                    </div>
+                                    <div class="notfond__results-info">
+                                        <h3 class="notfond__results-info-title">Ничего не найдено</h3>
+                                        <p class="notfond__results-info-text">Попробуйте изменить запрос</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+    
+                    </div>
+    
+                    <button type="button" class="menu__nav-search">
+                        <svg class="search__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.3851 12.4457C8.73488 14.5684 4.85544 14.4013 2.39866 11.9445C-0.237379 9.3085 -0.237379 5.03464 2.39866 2.3986C5.0347 -0.23744 9.30856 -0.23744 11.9446 2.3986C14.4014 4.85538 14.5685 8.73481 12.4458 11.3851L17.6014 16.5407C17.8943 16.8336 17.8943 17.3085 17.6014 17.6014C17.3085 17.8943 16.8337 17.8943 16.5408 17.6014L11.3851 12.4457ZM3.45932 10.8839C1.40907 8.83363 1.40907 5.50951 3.45932 3.45926C5.50957 1.40901 8.83369 1.40901 10.8839 3.45926C12.9327 5.50801 12.9342 8.82875 10.8885 10.8794C10.8869 10.8809 10.8854 10.8823 10.8839 10.8839C10.8824 10.8854 10.8809 10.8869 10.8794 10.8884C8.82882 12.9341 5.50807 12.9326 3.45932 10.8839Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+    
+                    <!-- control btns -->
+                    <div class="control__nav">
+                        <a href="./login.html" class="btn__samll control__nav-item control__profile">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.45964 4.25016C3.45964 2.29415 5.04529 0.708496 7.0013 0.708496C8.95731 0.708496 10.543 2.29415 10.543 4.25016C10.543 6.20617 8.95731 7.79183 7.0013 7.79183C5.04529 7.79183 3.45964 6.20617 3.45964 4.25016ZM7.0013 1.9585C5.73565 1.9585 4.70964 2.98451 4.70964 4.25016C4.70964 5.51581 5.73565 6.54183 7.0013 6.54183C8.26696 6.54183 9.29297 5.51581 9.29297 4.25016C9.29297 2.98451 8.26696 1.9585 7.0013 1.9585Z"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M3.66797 10.2918C2.63244 10.2918 1.79297 11.1313 1.79297 12.1668V13.1571C1.79297 13.1721 1.8039 13.185 1.81878 13.1874C5.25107 13.7478 8.75153 13.7478 12.1838 13.1874C12.1987 13.185 12.2096 13.1721 12.2096 13.1571V12.1668C12.2096 11.1313 11.3702 10.2918 10.3346 10.2918H10.0506C10.0286 10.2918 10.0068 10.2953 9.98591 10.3021L9.26465 10.5376C7.79396 11.0179 6.20864 11.0179 4.73796 10.5376L4.01669 10.3021C3.99582 10.2953 3.97399 10.2918 3.95203 10.2918H3.66797ZM0.542969 12.1668C0.542969 10.4409 1.94208 9.04183 3.66797 9.04183H3.95203C4.10577 9.04183 4.25855 9.06614 4.4047 9.11386L5.12596 9.34938C6.34453 9.74728 7.65808 9.74728 8.87665 9.34938L9.59791 9.11386C9.74406 9.06614 9.89684 9.04183 10.0506 9.04183H10.3346C12.0605 9.04183 13.4596 10.4409 13.4596 12.1668V13.1571C13.4596 13.7848 13.0047 14.32 12.3852 14.4211C8.81955 15.0032 5.18305 15.0032 1.61736 14.4211C0.997872 14.32 0.542969 13.7848 0.542969 13.1571V12.1668Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a href="./basket.html" class="btn__samll control__nav-item control__cart">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.9577 2.37484H3.44725L2.46377 0.612001C2.35338 0.414132 2.14455 0.291504 1.91797 0.291504H0.667969C0.322791 0.291504 0.0429688 0.571326 0.0429688 0.916504C0.0429688 1.26168 0.322791 1.5415 0.667969 1.5415H1.55097L2.52155 3.28121L4.75994 8.2339L4.76224 8.23896L4.95939 8.67518L2.71202 11.0724C2.55043 11.2447 2.49985 11.4935 2.58129 11.7153C2.66273 11.9371 2.86228 12.094 3.09702 12.1208L5.14546 12.3549C7.70769 12.6477 10.2949 12.6477 12.8572 12.3549L14.9056 12.1208C15.2486 12.0816 15.4948 11.7718 15.4556 11.4289C15.4164 11.0859 15.1066 10.8397 14.7637 10.8789L12.7152 11.113C10.2473 11.395 7.75531 11.395 5.2874 11.113L4.47446 11.0201L6.12394 9.26064C6.1399 9.24362 6.15472 9.22594 6.1684 9.2077L6.79575 9.28933C7.67485 9.40372 8.56348 9.42614 9.44724 9.35625C11.5085 9.19322 13.4188 8.21241 14.7525 6.6324L15.2343 6.06171C15.2504 6.04255 15.2654 6.02243 15.2792 6.00146L16.177 4.63325C16.8134 3.66344 16.1177 2.37484 14.9577 2.37484ZM6.21486 7.95321C6.07702 7.93527 5.95816 7.84771 5.90012 7.72154L5.89901 7.7191L4.04859 3.62484H14.9577C15.1235 3.62484 15.2228 3.80892 15.1319 3.94747L14.2548 5.2842L13.7973 5.8261C12.679 7.15099 11.0771 7.97344 9.34868 8.11014C8.55153 8.17318 7.74999 8.15296 6.95704 8.04978L6.21486 7.95321Z"
+                                    fill="black" />
+                                <path
+                                    d="M4.41797 13.4165C3.72761 13.4165 3.16797 13.9761 3.16797 14.6665C3.16797 15.3569 3.72761 15.9165 4.41797 15.9165C5.10833 15.9165 5.66797 15.3569 5.66797 14.6665C5.66797 13.9761 5.10833 13.4165 4.41797 13.4165Z"
+                                    fill="black" />
+                                <path
+                                    d="M12.3346 14.6665C12.3346 13.9761 12.8943 13.4165 13.5846 13.4165C14.275 13.4165 14.8346 13.9761 14.8346 14.6665C14.8346 15.3569 14.275 15.9165 13.5846 15.9165C12.8943 15.9165 12.3346 15.3569 12.3346 14.6665Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <button id="formModalBtn" type="button" class="btn__samll control__nav-item control__call">
+                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.84047 6.85635C4.62779 10.7482 7.80827 13.8424 11.762 15.519L11.7745 15.5243L12.5383 15.8647C13.511 16.2981 14.6542 15.9903 15.2778 15.1272L16.5522 13.3635C16.63 13.2558 16.6099 13.106 16.5065 13.0225L14.2818 11.2277C14.1712 11.1385 14.0085 11.1593 13.9239 11.2734L13.0581 12.4418C12.8478 12.7256 12.468 12.8242 12.1463 12.6786C9.18987 11.3406 6.81416 8.96491 5.47622 6.00851C5.33061 5.68674 5.42921 5.30699 5.71296 5.09671L6.88134 4.23085C6.9955 4.14625 7.01628 3.98362 6.92706 3.87302L5.13202 1.64798C5.04859 1.54456 4.89884 1.52448 4.79111 1.60225L3.01782 2.88241C2.14903 3.5096 1.84307 4.66244 2.28654 5.63789L2.83988 6.85505C2.84008 6.85549 2.84027 6.85592 2.84047 6.85635ZM11.1701 16.8973C6.8741 15.0737 3.41874 11.7107 1.4767 7.48094L1.47553 7.4784L0.921024 6.25868C0.181924 4.63293 0.691852 2.71152 2.13983 1.66621L3.91313 0.38605C4.66725 -0.158356 5.71548 -0.0177515 6.29947 0.706142L8.09451 2.93119C8.71907 3.70536 8.5736 4.84375 7.77444 5.43599L7.10494 5.93215C8.23585 8.12654 10.0282 9.91892 12.2226 11.0498L12.7188 10.3803C13.311 9.58117 14.4494 9.4357 15.2236 10.0603L17.4483 11.855C18.1724 12.4392 18.3129 13.4879 17.768 14.242L16.4936 16.0057C15.4543 17.4442 13.5489 17.9572 11.9279 17.2349L11.1701 16.8973Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn__samll control__nav-item control__construct">
+                            <span>Конструктор</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.305 2.6105C13.4331 2.80458 13.4118 3.06832 13.2409 3.23917L7.11266 9.36743C7.04985 9.43025 6.97142 9.47519 6.88547 9.49765L4.33319 10.1643C4.24994 10.1861 4.16414 10.1856 4.08351 10.1651C3.9978 10.1433 3.91796 10.0988 3.85328 10.0341C3.72776 9.90858 3.6782 9.72592 3.72306 9.55418L4.38973 7.00189C4.40937 6.92669 4.44624 6.85241 4.49723 6.79414L10.6482 0.646447C10.702 0.592604 10.7669 0.552307 10.8375 0.527754C10.8898 0.50955 10.9453 0.5 11.0017 0.5C11.1344 0.5 11.2615 0.552678 11.3553 0.646447L13.2409 2.53206C13.2653 2.55647 13.2867 2.58278 13.305 2.6105ZM12.1803 2.88562L11.0017 1.70711L5.32297 7.38588L4.90632 8.98106L6.50149 8.56439L12.1803 2.88562Z"
+                                    fill="black" />
+                                <path
+                                    d="M12.096 10.4402C12.2783 8.8818 12.3363 7.31252 12.27 5.74719C12.2668 5.67225 12.295 5.59932 12.348 5.54628L13.0036 4.89072C13.0842 4.81013 13.2219 4.86129 13.2294 4.97503C13.3527 6.8348 13.306 8.70302 13.0892 10.5564C12.9315 11.9047 11.8486 12.9614 10.5073 13.1113C8.1962 13.3696 5.80731 13.3696 3.49626 13.1113C2.15489 12.9614 1.072 11.9047 0.9143 10.5564C0.637942 8.19351 0.637942 5.80649 0.9143 3.44362C1.072 2.09527 2.15489 1.03859 3.49626 0.888675C5.24943 0.692732 7.04739 0.645432 8.82218 0.746774C8.93657 0.753305 8.98871 0.891717 8.9077 0.972729L8.246 1.63443C8.19353 1.6869 8.12159 1.71507 8.04744 1.71257C6.56316 1.66251 5.06879 1.71915 3.60734 1.88249C2.7206 1.98159 2.01027 2.68134 1.90753 3.55979C1.6402 5.84547 1.6402 8.15452 1.90753 10.4402C2.01027 11.3187 2.7206 12.0184 3.60734 12.1175C5.84457 12.3676 8.15895 12.3676 10.3962 12.1175C11.2829 12.0184 11.9932 11.3187 12.096 10.4402Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
+    
+                </nav>
+    
+            </div>
+        </div>
+    </header> <!-- /header -->
+    
+    <main class="main main-pattern">
+    
+        <div class="breadcrambs">
+            <div class="container">
+                <p class="breadcrambs__path">Главная / Личный кабинет / Редактирование профиля / </p>
+            </div>
+        </div>
+    
+        <section class="edit__section">
+            <div class="container">
+                <div class="edit__wrap">
+    
+                    <h1 class="edit__title"><span class="underline-style">Редактирование профиля</span></h1>
+    
+                    <div class="edit__content">
+    
+                        <form id="editEntityForm" action="/">
+    
+                            <div class="form__row">
+    
+                                <div id="editSocField" class="form__field">
+                                    <label for="editSoc" class="form__field-label">Общество</label>
+                                    <input type="text" name="editSoc" id="editSoc" class="form__field-input"
+                                    placeholder="ОАО">
+                                </div>
+    
+                                <div id="editNameField" class="form__field">
+                                    <label for="editName" class="form__field-label">Название</label>
+                                    <input type="text" name="editName" id="editName" class="form__field-input"
+                                    placeholder="Строй групп">
+                                </div>
+    
+                            </div>
+    
+                            <div class="form__row">
+    
+                                <div class="form__field form-col-2">
+                                    <label for="editInn" class="form__field-label">ИНН</label>
+                                    <input type="text" name="editInn" id="editInn" class="form__field-input"
+                                    placeholder="0000000000">
+                                </div>
+    
+                                <div class="form__field form-col-2">
+                                    <label for="editKpp" class="form__field-label">КПП</label>
+                                    <input type="text" name="editKpp" id="editKpp" class="form__field-input"
+                                    placeholder="0000000000">
+                                </div>
+    
+                            </div>
+    
+                            <div class="form__row">
+    
+                                <div class="form__field">
+                                    <label for="editSpec" class="form__field-label">Специализация</label>
+                                    <div id="editSpec" class="form__drop drop__wrap">
+                                        <p class="form__drop-name drop__trigger">
+                                            Другое
+                                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M9.76877 0.899655C10.0771 1.2103 10.0771 1.71395 9.76877 2.0246L5.55824 6.26702C5.24993 6.57767 4.75007 6.57767 4.44176 6.26702L0.231232 2.0246C-0.0770772 1.71395 -0.0770772 1.2103 0.231231 0.899655C0.53954 0.589011 1.03941 0.589011 1.34772 0.899655L5 4.57961L8.65228 0.899655C8.96059 0.589011 9.46046 0.589011 9.76877 0.899655Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </p>
+                                        <ul class="form__drop-content dropdown">
+                                            <li class="dropdown__point">...</li>
+                                            <li class="dropdown__point">...</li>
+                                            <li class="dropdown__point">...</li>
+                                            <li class="dropdown__point">...</li>
+                                        </ul>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                            <div class="form__row">
+    
+                                <div class="form__field">
+                                    <label for="editActivity" class="form__field-label">Компания занимается</label>
+                                    <input type="text" name="editActivity" id="editActivity" class="form__field-input"
+                                    placeholder="Производство пиломатериалов">
+                                </div>
+    
+                            </div>
+    
+                            <div class="form__row">
+    
+                                <div class="form__field">
+                                    <label for="editAddress" class="form__field-label">Адрес</label>
+                                    <input type="text" name="editAddress" id="editAddress" class="form__field-input"
+                                    placeholder="Москва, ул. Пушкина д. 32 корп. 3">
+                                </div>
+    
+                            </div>
+    
+                            <div class="form__row">
+    
+                                <div class="form__field">
+                                    <label for="editSite" class="form__field-label">Сайт компании <span class="not-important">(не обязательно)</span></label>
+                                    <input type="text" name="editSite" id="editSite" class="form__field-input"
+                                    placeholder="site.ru">
+                                </div>
+    
+                            </div>
+    
+                            <div class="form__row">
+    
+                                <div class="form__field form-col-2">
+                                    <label for="editPhone" class="form__field-label">Телефон</label>
+                                    <input type="text" name="editPhone" id="editPhone" class="form__field-input"
+                                    placeholder="+7 000 000 00 00">
+                                </div>
+    
+                                <div class="form__field form-col-2">
+                                    <label for="editMail" class="form__field-label">Почта</label>
+                                    <input type="text" name="editMail" id="editMail" class="form__field-input"
+                                    placeholder="ex@mail.com">
+                                </div>
+    
+                            </div>
+    
+                            <div class="form__block">
+                                <div class="form__row">
+    
+                                    <div class="form__field">
+                                        <label for="editContactPers" class="form__field-label">ФИО контактного лица</label>
+                                        <input type="text" name="editContactPers" id="editContactPers" class="form__field-input"
+                                        placeholder="Иванов Иван Иванович">
+                                    </div>
+    
+                                </div>
+    
+                                <div class="form__row">
+    
+                                    <div class="form__field form-col-2">
+                                        <label for="editContactPhone" class="form__field-label">Телефон</label>
+                                        <input type="text" name="editContactPhone" id="editContactPhone" class="form__field-input"
+                                        placeholder="+7 000 000 00 00">
+                                    </div>
+                                    
+                                    <div class="form__field form-col-2">
+                                        <label for="editContactMail" class="form__field-label">Почта</label>
+                                        <input type="text" name="editContactMail" id="editContactMail" class="form__field-input"
+                                        placeholder="ex@mail.com">
+                                    </div>
+    
+                                </div>
+    
+                                <div class="form__row">
+    
+                                    <div class="form__btns edit__btns">
+                                        <button id="editSaveBtn" class="editsave__btn main__btn form__btn"
+                                        type="submit">Сохранить</button>
+                                        <button id="editCancelBtn" class="editcancel__btn btn__large form__btn"
+                                        type="submit">Отменить</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+    
+                        </form>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- iclude form modal -->
+        <div id="contactsFormModal" class="form-section">
+            <div class="container">
+        
+                <div class="form__wrap">
+        
+                    <div class="form__wrap-info">
+                        <h1 class="form__wrap-info-title">Нужна помощь?</h1>
+                        <button type="button" class="form-modal__close btn__samll">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.46458 15.5354L15.5356 8.46436" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path d="M8.46458 8.46458L15.5356 15.5356" stroke="white" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+        
+                    <form id="mainFormModal" action="/" method="POST" class="contscts__form">
+                        <div class="contscts__form-field">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" id="name" placeholder="Женя" class="contscts__form-input">
+                        </div>
+                        <div class="contscts__form-field">
+                            <label for="name">Телефон</label>
+                            <div class="contscts__form-field-box">
+                                <input type="text" name="name" id="name" placeholder="+7 000 000 00 00"
+                                    class="contscts__form-input">
+                                <button type="submit" class="form__button">
+                                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.22603 1.10869C6.98195 0.864612 6.98195 0.468884 7.22603 0.224806C7.4701 -0.0192714 7.86583 -0.0192714 8.10991 0.224806L11.4432 3.55814C11.6873 3.80222 11.6873 4.19795 11.4432 4.44202L8.10991 7.77536C7.86583 8.01944 7.4701 8.01944 7.22603 7.77536C6.98195 7.53128 6.98195 7.13555 7.22603 6.89147L9.49242 4.62508H1.41797C1.07279 4.62508 0.792969 4.34526 0.792969 4.00008C0.792969 3.6549 1.07279 3.37508 1.41797 3.37508H9.49242L7.22603 1.10869Z"
+                                            fill="#000000" />
+                                    </svg>
+        
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+        
+                </div>
+        
+            </div>
+        </div>
+    </main>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__wrap-top">
+                    <div class="footer__wrap-logo logo">
+                        <a href="/">
+                            <img class="logo__img" src="assets/img/svg/logo.svg" alt="Reklem">
+                        </a>
+                    </div>
+                    <div class="footer__nav">
+        
+                        <!-- row -->
+                        <div class="footer__nav-row">
+        
+                             <!-- col -->
+                            <div class="footer__nav-col col-main">
+                                <div class="footer__nav-wrap">
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">О компании</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Портфолио</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Вакансии</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Диллерам</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Гарантия</a></li>
+                                    </ul>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Контакты</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Акции</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Производство</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Доставка и оплата</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Обмен и возврат</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /col -->
+        
+                            <!-- col -->
+                            <div class="footer__nav-col col-srvices">
+                                <h3 class="footer__nav-caption">Услуги</h3>
+                                <div class="footer__nav-wrap">
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Шелкография</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Тампопечать</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Гравировка</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Гравировка</a></li>
+                                    </ul>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Гравировка</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Тиснение</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Клише</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Полноцветная печать</a></li>
+                                    </ul>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Полимерная заливка</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Услуги дизайнера</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Запись на USB</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /col -->
+        
+                        </div>
+                        <!-- /row -->
+        
+                        <!-- row -->
+                        <div class="footer__nav-row catalog-row">
+        
+                            <!-- col -->
+                            <div class="footer__nav-col col-catalog">
+                                <h3 class="footer__nav-caption">Каталог</h3>
+                                <div class="footer__nav-wrap">
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Аксессуары</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Текстиль</a></li>
+                                    </ul>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Флеш-карты</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Xiaomi</a></li>
+                                    </ul>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Умные Кружки</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Внешник накопители</a></li>
+                                    </ul>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Канцелярия</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Упаковка</a></li>
+                                    </ul>
+                                    <ul class="footer__nav-list">
+                                        <li class="footer__nav-list-item"><a href="#">Праздники</a></li>
+                                        <li class="footer__nav-list-item"><a href="#">Остальные события</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /col -->
+        
+                        </div>
+                         <!-- /row -->
+        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer__wrap-bottom">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__wrap-socials">
+                        <button type="button" class="btn__samll socials__btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.3345 3.83329C11.3345 3.37305 11.7076 2.99996 12.1679 2.99996C12.6281 2.99996 13.0012 3.37305 13.0012 3.83329C13.0012 4.29353 12.6281 4.66662 12.1679 4.66662C11.7076 4.66662 11.3345 4.29353 11.3345 3.83329Z" fill="#000000"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00121 4.04162C5.81508 4.04162 4.04288 5.81383 4.04288 7.99996C4.04288 10.1861 5.81508 11.9583 8.00121 11.9583C10.1873 11.9583 11.9595 10.1861 11.9595 7.99996C11.9595 5.81383 10.1873 4.04162 8.00121 4.04162ZM5.29288 7.99996C5.29288 6.50419 6.50544 5.29162 8.00121 5.29162C9.49698 5.29162 10.7095 6.50419 10.7095 7.99996C10.7095 9.49573 9.49698 10.7083 8.00121 10.7083C6.50544 10.7083 5.29288 9.49573 5.29288 7.99996Z" fill="#000000"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3831 0.360803C9.49428 0.0379355 6.50816 0.0379355 3.61935 0.360803C1.94264 0.5482 0.589026 1.86904 0.391899 3.55448C0.0464504 6.50807 0.0464504 9.49185 0.391899 12.4454C0.589026 14.1309 1.94264 15.4517 3.61935 15.6391C6.50817 15.962 9.49428 15.962 12.3831 15.6391C14.0598 15.4517 15.4134 14.1309 15.6105 12.4454C15.956 9.49185 15.956 6.50806 15.6105 3.55448C15.4134 1.86904 14.0598 0.5482 12.3831 0.360803ZM3.75819 1.60307C6.55473 1.29051 9.44771 1.29051 12.2442 1.60307C13.3527 1.72695 14.2406 2.60163 14.369 3.69969C14.7032 6.5568 14.7032 9.44311 14.369 12.3002C14.2406 13.3983 13.3527 14.273 12.2442 14.3968C9.44771 14.7094 6.55473 14.7094 3.75819 14.3968C2.64977 14.273 1.76186 13.3983 1.63344 12.3002C1.29927 9.44311 1.29927 6.5568 1.63344 3.69969C1.76186 2.60163 2.64977 1.72695 3.75819 1.60307Z" fill="#000000"/>
+                                </svg>
+                                
+                        </button>
+                        <button type="button" class="btn__samll socials__btn">
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.73844 2.15641C4.55891 1.33594 5.67171 0.875 6.83203 0.875H9.08203C9.42721 0.875 9.70703 1.15482 9.70703 1.5V4.5C9.70703 4.84518 9.42721 5.125 9.08203 5.125H6.83203C6.79888 5.125 6.76708 5.13817 6.74364 5.16161C6.7202 5.18505 6.70703 5.21685 6.70703 5.25V6.875H9.08203C9.27449 6.875 9.45622 6.96367 9.57466 7.11537C9.6931 7.26706 9.73505 7.46487 9.68837 7.65158L8.93837 10.6516C8.86881 10.9298 8.61882 11.125 8.33203 11.125H6.70703V16.5C6.70703 16.8452 6.42721 17.125 6.08203 17.125H3.08203C2.73685 17.125 2.45703 16.8452 2.45703 16.5V11.125H0.832031C0.486853 11.125 0.207031 10.8452 0.207031 10.5V7.5C0.207031 7.15482 0.486853 6.875 0.832031 6.875H2.45703V5.25C2.45703 4.08968 2.91797 2.97688 3.73844 2.15641ZM6.83203 2.125C6.00323 2.125 5.20837 2.45424 4.62232 3.04029C4.03627 3.62634 3.70703 4.4212 3.70703 5.25V7.5C3.70703 7.84518 3.42721 8.125 3.08203 8.125H1.45703V9.875H3.08203C3.42721 9.875 3.70703 10.1548 3.70703 10.5V15.875H5.45703V10.5C5.45703 10.1548 5.73685 9.875 6.08203 9.875H7.84405L8.28155 8.125H6.08203C5.73685 8.125 5.45703 7.84518 5.45703 7.5V5.25C5.45703 4.88533 5.6019 4.53559 5.85976 4.27773C6.11762 4.01987 6.46736 3.875 6.83203 3.875H8.45703V2.125H6.83203Z" fill="#000000"/>
+                                </svg>
+                                
+                        </button>
+                        <button type="button" class="btn__samll socials__btn">
+                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.65516 3.96405C7.46208 3.8482 7.2216 3.84517 7.02566 3.95611C6.82972 4.06705 6.7086 4.27482 6.7086 4.49999V9.49999C6.7086 9.72516 6.82972 9.93292 7.02566 10.0439C7.2216 10.1548 7.46208 10.1518 7.65516 10.0359L11.8218 7.53592C12.0101 7.42297 12.1253 7.21952 12.1253 6.99999C12.1253 6.78045 12.0101 6.57701 11.8218 6.46405L7.65516 3.96405ZM10.2855 6.99999L7.9586 8.39612V5.60385L10.2855 6.99999Z" fill="#000000"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1925 0.867719C10.402 0.6494 7.59863 0.6494 4.80808 0.867719L2.94083 1.0138C1.80536 1.10264 0.876457 1.95364 0.688759 3.07701C0.254789 5.67432 0.254789 8.32565 0.688759 10.923C0.876457 12.0463 1.80536 12.8973 2.94083 12.9862L4.80808 13.1323C7.59862 13.3506 10.402 13.3506 13.1925 13.1323L15.0597 12.9862C16.1952 12.8973 17.1241 12.0463 17.3118 10.923C17.7458 8.32565 17.7458 5.67432 17.3118 3.07701C17.1241 1.95364 16.1952 1.10264 15.0597 1.0138L13.1925 0.867719ZM4.90558 2.11391C7.63123 1.90067 10.3694 1.90067 13.095 2.11391L14.9622 2.26C15.5253 2.30404 15.9858 2.726 16.0789 3.28301C16.4901 5.74394 16.4901 8.25603 16.0789 10.717C15.9858 11.274 15.5253 11.6959 14.9622 11.74L13.095 11.8861C10.3694 12.0993 7.63122 12.0993 4.90558 11.8861L3.03833 11.74C2.47532 11.6959 2.01474 11.274 1.92167 10.717C1.51049 8.25603 1.51049 5.74394 1.92167 3.28301C2.01474 2.726 2.47532 2.30404 3.03833 2.26L4.90558 2.11391Z" fill="#000000"/>
+                            </svg> 
+                        </button>
+                    </div>
+                    <div class="footer__wrap-info">
+                        <div class="footer__info-col">
+                            <h3 class="footer__info-caption">Москва</h3>
+                            <a href="tel:+7 (945) 133-16-28" class="footer__info-link">+7 (945) 133-16-28</a>
+                        </div>
+                        <div class="footer__info-col">
+                            <h3 class="footer__info-caption">Улан-Удэ</h3>
+                            <a href="tel:+7 (925) 272-83-08" class="footer__info-link">+7 (925) 272-83-08</a>
+                        </div>
+                        <div class="footer__info-col">
+                            <a href="#" class="footer__info-caption">
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.45964 4.25016C3.45964 2.29415 5.04529 0.708496 7.0013 0.708496C8.95731 0.708496 10.543 2.29415 10.543 4.25016C10.543 6.20617 8.95731 7.79183 7.0013 7.79183C5.04529 7.79183 3.45964 6.20617 3.45964 4.25016ZM7.0013 1.9585C5.73565 1.9585 4.70964 2.98451 4.70964 4.25016C4.70964 5.51581 5.73565 6.54183 7.0013 6.54183C8.26696 6.54183 9.29297 5.51581 9.29297 4.25016C9.29297 2.98451 8.26696 1.9585 7.0013 1.9585Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.66797 10.2918C2.63244 10.2918 1.79297 11.1313 1.79297 12.1668V13.1571C1.79297 13.1721 1.8039 13.185 1.81878 13.1874C5.25107 13.7478 8.75153 13.7478 12.1838 13.1874C12.1987 13.185 12.2096 13.1721 12.2096 13.1571V12.1668C12.2096 11.1313 11.3702 10.2918 10.3346 10.2918H10.0506C10.0286 10.2918 10.0068 10.2953 9.98591 10.3021L9.26465 10.5376C7.79396 11.0179 6.20864 11.0179 4.73796 10.5376L4.01669 10.3021C3.99582 10.2953 3.97399 10.2918 3.95203 10.2918H3.66797ZM0.542969 12.1668C0.542969 10.4409 1.94208 9.04183 3.66797 9.04183H3.95203C4.10577 9.04183 4.25855 9.06614 4.4047 9.11386L5.12596 9.34938C6.34453 9.74728 7.65808 9.74728 8.87665 9.34938L9.59791 9.11386C9.74406 9.06614 9.89684 9.04183 10.0506 9.04183H10.3346C12.0605 9.04183 13.4596 10.4409 13.4596 12.1668V13.1571C13.4596 13.7848 13.0047 14.32 12.3852 14.4211C8.81955 15.0032 5.18305 15.0032 1.61736 14.4211C0.997872 14.32 0.542969 13.7848 0.542969 13.1571V12.1668Z" fill="black"/>
+                                </svg>
+                                Личный кабинет
+                            </a>
+                            <a href="mailto:info@reklem.ru" class="footer__info-link">info@reklem.ru</a>
+                        </div>
+                        <div class="footer__info-col">
+                            <a href="#" class="footer__info-caption">
+                                <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.75 11C11.75 10.5858 11.4142 10.25 11 10.25H5C4.58579 10.25 4.25 10.5858 4.25 11C4.25 11.4142 4.58579 11.75 5 11.75H11C11.4142 11.75 11.75 11.4142 11.75 11Z" fill="black"/>
+                                    <path d="M11.75 15C11.75 14.5858 11.4142 14.25 11 14.25H5C4.58579 14.25 4.25 14.5858 4.25 15C4.25 15.4142 4.58579 15.75 5 15.75H11C11.4142 15.75 11.75 15.4142 11.75 15Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0.25C1.48122 0.25 0.25 1.48122 0.25 3V17C0.25 18.5188 1.48122 19.75 3 19.75H13C14.5188 19.75 15.75 18.5188 15.75 17V5.96766C15.75 5.58689 15.6258 5.21651 15.3963 4.9127L12.3985 0.945042C12.0677 0.507298 11.5509 0.25 11.0022 0.25H3ZM1.75 3C1.75 2.30964 2.30964 1.75 3 1.75H10.25V6.14705C10.25 6.56126 10.5858 6.89705 11 6.89705H14.25V17C14.25 17.6904 13.6904 18.25 13 18.25H3C2.30964 18.25 1.75 17.6904 1.75 17V3Z" fill="black"/>
+                                </svg>   
+                                Обработка данных
+                            </a>
+                            <p class="footer__info-copyright">© Copyright 2021</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer> <!-- /footer --></div>
+
+<script src="assets/js/main.min.js"></script>
+
+</body>
+</html>
