@@ -1,0 +1,16 @@
+#popupRew {
+    max-width: 44.8rem;
+    max-height: 60.8rem;
+    width: 100%;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+}
+
+.popup-action-btn {
+    span {
+        margin-right: 0.8rem;
+    }
+}

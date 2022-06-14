@@ -1,0 +1,121 @@
+/* Fonts */
+@import "fonts";
+
+/* Default styles */
+@import "base";
+
+:root {
+    /* tepography */
+    --h1-size: 3.6rem;
+    --h2-size: 2.4rem;
+    --h3-size: 1.4rem;
+    --text-normal-size: 1.4rem;
+    --text-lite-size: 1.2rem;
+    --menu-size: 1.4rem;
+    /* red */
+    --red-one: hsl(349, 100%, 59%);
+    --red-two: hsl(349, 100%, 59%);
+    /* green */
+    --green-one: hsl(162, 84%, 40%);
+    --green-two: hsl(162, 26%, 38%);
+    /* orange */
+    --orange-one: hsl(34, 100%, 59%);
+    --orange-two: hsl(34, 100%, 42%);
+    /* orange */
+    --grey-one: hsl(0, 0%, 90%);
+    --grey-two: hsl(0, 0%, 95%);
+    --grey-three: hsl(0, 0%, 70%);
+    /* transition */
+    --transition: all 0.2s ease 0s;
+
+    /* params */
+    --header-h: 8rem;
+}
+
+/* root: MEDIA <= 580px */
+@media only screen and (max-width: 580px) {
+    :root {
+        /* tepography */
+        --h1-size: 2rem;
+        --h2-size: 1.8rem;
+        --h3-size: 1.2rem;
+        --text-normal-size: 1.2rem;
+        --text-lite-size: 1.2rem;
+        --menu-size: 1.2rem;
+    }
+}
+
+/* root: MEDIA <= 480px */
+@media only screen and (max-width: 480px) {
+    :root {
+        /* params */
+        --header-h: 6rem;
+    }
+}
+
+/* Swiper */
+@import '../../../node_modules/swiper/swiper.scss';
+@import '../../../node_modules/swiper/modules/navigation/navigation.scss';
+@import '../../../node_modules/swiper/modules/pagination/pagination.scss';
+
+/* nouislider */
+@import "vendor/nouislider.scss";
+
+
+/* Blocks */
+/* General */
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+/* Blocks(pages) */
+@import "blocks/catalog.scss";
+@import "blocks/services.scss";
+@import "blocks/contacts.scss";
+@import "blocks/contacts-form.scss";
+@import "blocks/form.scss";
+@import "blocks/pagination.scss";
+@import "blocks/accordion.scss";
+@import "blocks/sponsors-slider.scss";
+@import "blocks/total-price-panel.scss";
+@import "blocks/filters-panel.scss";
+@import "blocks/404.scss";
+@import "blocks/basket.scss";
+@import "blocks/login.scss";
+@import "blocks/sign-in.scss";
+@import "blocks/personal.scss";
+@import "blocks/password-rest.scss";
+@import "blocks/edit-profile.scss";
+@import "blocks/breadcrambs.scss";
+@import "blocks/sorts.scss";
+@import "blocks/tabs.scss";
+@import "blocks/empty.scss";
+@import "blocks/popups.scss";
+@import "blocks/desc-popup.scss";
+@import "blocks/call-popup.scss";
+@import "blocks/succ-popup.scss";
+@import "blocks/select-popup.scss";
+@import "blocks/rew-unlogin-popup.scss";
+@import "blocks/rew-popup.scss";
+@import "blocks/succ-rew-popup.scss";
+@import "blocks/response-popup.scss";
+@import "blocks/response-succ-popup.scss";
+@import "blocks/rew-more-popup.scss";
+/* Sections */
+@import "blocks/present-section.scss";
+@import "blocks/about-section.scss";
+@import "blocks/constructor-section.scss";
+@import "blocks/popular-new-section.scss";
+@import "blocks/services-section.scss";
+@import "blocks/main-categries-section.scss";
+@import "blocks/reviews-section.scss";
+@import "blocks/news-section.scss";
+@import "blocks/question-section.scss";
+@import "blocks/product-section.scss";
+@import "blocks/portfolio-section.scss";
+@import "blocks/prod-section.scss";
+@import "blocks/vacancies-section.scss";
+@import "blocks/history-section.scss";
+@import "blocks/new-section.scss";
+@import "blocks/download-section.scss";
+@import "blocks/commercial-section.scss";
+@import "blocks/making-section.scss";
+

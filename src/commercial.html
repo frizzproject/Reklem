@@ -1,0 +1,514 @@
+---
+layout: default
+title: Reklem
+---
+
+<main class="main main-pattern">
+
+    <div class="breadcrambs">
+        <div class="container">
+            <p class="breadcrambs__path">Главная / Коммерческое предложение / </p>
+        </div>
+    </div>
+
+    <section class="commercial__section">
+        <div class="container">
+
+            <div class="commercial__wrap">
+                <h1 class="commercial__title"><span class="underline-style">Коммерческое</span> предложение</h1>
+
+                <div class="commercial__nav">
+                    <div class="commercial__sort-elements">
+
+                        <div class="sort__checkbox">
+                            <input type="checkbox" id="article" name="Описание товара">
+                            <label for="onlyRew">Артикул</label>
+                        </div>
+
+                        <div class="sort__checkbox">
+                            <input type="checkbox" id="desc" name="Описание товара">
+                            <label for="ourDesign">Описание товара</label>
+                        </div>
+
+                        <div class="sort__checkbox">
+                            <input type="checkbox" id="sale" name="Скидка">
+                            <label for="ourDesign">Скидка</label>
+                        </div>
+
+                        <div class="sort__checkbox">
+                            <input type="checkbox" id="upclone" name="Верхний колонтитул">
+                            <label for="ourDesign">Верхний колонтитул</label>
+                        </div>
+
+                    </div>
+                    <div class="commercial__sort-btns">
+                        <a href="#" class="main__btn commercial__sort-btn">Скачать .PDF</a>
+                        <a href="#" class="btn__large commercial__sort-btn">Просмотр</a>
+                    </div>
+                </div>
+
+
+                <div class="commercial__info">
+
+                    <div class="commercial__info-logo">
+                        <img src="./assets/img/commerc-logo.png" alt="LUKOIL">
+                        <div class="commercial__logo-change">
+                            <button class="btn__large">
+                                <span>Заменить лого</span>
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0.5 5C0.5 2.51472 2.51472 0.5 5 0.5H10.3333C12.0822 0.5 13.5 1.91777 13.5 3.66667C13.5 5.41557 12.0822 6.83333 10.3333 6.83333H4.90476C3.89224 6.83333 3.07143 6.01252 3.07143 5C3.07143 3.98748 3.89224 3.16667 4.90476 3.16667H10.1429C10.419 3.16667 10.6429 3.39052 10.6429 3.66667C10.6429 3.94281 10.419 4.16667 10.1429 4.16667H4.90476C4.44452 4.16667 4.07143 4.53976 4.07143 5C4.07143 5.46024 4.44452 5.83333 4.90476 5.83333H10.3333C11.53 5.83333 12.5 4.86328 12.5 3.66667C12.5 2.47005 11.53 1.5 10.3333 1.5H5C3.067 1.5 1.5 3.067 1.5 5C1.5 6.933 3.067 8.5 5 8.5H10.1429C10.419 8.5 10.6429 8.72386 10.6429 9C10.6429 9.27614 10.419 9.5 10.1429 9.5H5C2.51472 9.5 0.5 7.48528 0.5 5Z"
+                                        fill="black" />
+                                </svg>
+                            </button>
+                            <div class="format__list">
+                                <span class="format__list-format">.jpg</span>
+                                <span class="format__list-format">.png</span>
+                                <span class="format__list-format">.jpeg</span>
+                                <span class="format__list-size">от 720x720</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="commercialForm" action="/" class="form">
+
+                        <div class="form__row">
+
+                            <div class="form__field form-col-2">
+                                <label for="nameOrg" class="form__field-label">Название организации</label>
+                                <input type="text" name="nameOrg" id="nameOrg" class="form__field-input">
+                            </div>
+
+                            <div class="form__field form-col-2">
+                                <label for="addressOrg" class="form__field-label">Адрес</label>
+                                <input type="text" name="addressOrg" id="addressOrg" class="form__field-input">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field form-col-3">
+                                <label for="innOrg" class="form__field-label">ИНН</label>
+                                <input type="text" name="innOrg" id="innOrg" class="form__field-input">
+                            </div>
+
+                            <div class="form__field form-col-3">
+                                <label for="kppOrg" class="form__field-label">КПП</label>
+                                <input type="text" name="kppOrg" id="kppOrg" class="form__field-input">
+                            </div>
+
+                            <div class="form__field form-col-3">
+                                <label for="rsOrg" class="form__field-label">Р/С</label>
+                                <input type="text" name="rsOrg" id="rsOrg" class="form__field-input">
+                            </div>
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field form-col-3">
+                                <label for="phoneOrg" class="form__field-label">Телефон</label>
+                                <input type="text" name="phoneOrg" id="phoneOrg" class="form__field-input">
+                            </div>
+
+                            <div class="form__field form-col-3">
+                                <label for="koppcOrg" class="form__field-label">Корр/С</label>
+                                <input type="text" name="koppcOrg" id="koppcOrg" class="form__field-input">
+                            </div>
+
+                            <div class="form__field form-col-3">
+                                <label for="bik" class="form__field-label">БИК</label>
+                                <input type="text" name="bik" id="bik" class="form__field-input">
+                            </div>
+
+
+                        </div>
+
+                        <div class="form__row">
+
+                            <div class="form__field">
+                                <label for="whereOrg" class="form__field-label">Куда</label>
+                                <input type="text" name="whereOrg" id="whereOrg" class="form__field-input">
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="commercial__content">
+
+                    <div class="commercial__content-info">
+                        <form id="commercialProductsForm" action="/" class="form">
+                            <div class="form__row">
+
+                                <div class="form__field">
+                                    <label for="titleCommerc" class="form__field-label">Заголовок</label>
+                                    <input type="text" name="titleCommerc" id="titleCommerc" class="form__field-input">
+                                </div>
+
+                            </div>
+                            <div class="form__row">
+
+                                <div class="form__field">
+                                    <label for="letterCommerc" class="form__field-label">Сопроводительное письмо</label>
+                                    <textarea type="text" name="letterCommerc" id="letterCommerc"
+                                        class="form__field-textarea"
+                                        placeholder="Сопроводительный текст. По умолчанию создается Реклем"></textarea>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- commercial products -->
+                    <div class="commercial__products">
+                        <!-- commercial product -->
+                        <div class="commercial__product">
+
+                            <div class="commercial__product-preview">
+                                <div class="commercial__product-preview-img">
+                                    <img src="./assets/img/commerc-pr-1.png" alt="img">
+                                </div>
+                                <div class="commercial__preview-change">
+                                    <button class="btn__large">
+                                        <span>Заменить изображение</span>
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.5 5C0.5 2.51472 2.51472 0.5 5 0.5H10.3333C12.0822 0.5 13.5 1.91777 13.5 3.66667C13.5 5.41557 12.0822 6.83333 10.3333 6.83333H4.90476C3.89224 6.83333 3.07143 6.01252 3.07143 5C3.07143 3.98748 3.89224 3.16667 4.90476 3.16667H10.1429C10.419 3.16667 10.6429 3.39052 10.6429 3.66667C10.6429 3.94281 10.419 4.16667 10.1429 4.16667H4.90476C4.44452 4.16667 4.07143 4.53976 4.07143 5C4.07143 5.46024 4.44452 5.83333 4.90476 5.83333H10.3333C11.53 5.83333 12.5 4.86328 12.5 3.66667C12.5 2.47005 11.53 1.5 10.3333 1.5H5C3.067 1.5 1.5 3.067 1.5 5C1.5 6.933 3.067 8.5 5 8.5H10.1429C10.419 8.5 10.6429 8.72386 10.6429 9C10.6429 9.27614 10.419 9.5 10.1429 9.5H5C2.51472 9.5 0.5 7.48528 0.5 5Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <div class="format__list">
+                                        <span class="format__list-format">.jpg</span>
+                                        <span class="format__list-format">.png</span>
+                                        <span class="format__list-format">.jpeg</span>
+                                        <span class="format__list-size">от 720x720</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="commercial__product-content">
+
+                                <form id="commercialProductForm" action="/" class="form">
+
+                                    <div class="form__row">
+
+                                        <div class="form__field">
+                                            <label for="productCommerc" class="form__field-label">Товар</label>
+                                            <input type="text" name="productCommerc" id="productCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__article">
+                                            <span>Арт. 1256.60.2</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form__row">
+
+                                        <div class="form__field">
+                                            <label for="descCommerc" class="form__field-label">Описание</label>
+                                            <textarea type="text" name="descCommerc" id="descCommerc"
+                                                class="form__field-textarea --textarea-l"></textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form__row">
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="circulCommerc" class="form__field-label">Тираж, шт</label>
+                                            <input type="text" name="circulCommerc" id="circulCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="saleCommerc" class="form__field-label">Скидка, %</label>
+                                            <input type="text" name="saleCommerc" id="saleCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="priceCommerc" class="form__field-label">Цена, руб</label>
+                                            <input type="text" name="priceCommerc" id="priceCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <button type="button" class="form__field-del btn__samll">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.05373 12.9463L12.9463 7.05371" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                                <path d="M7.05373 7.05373L12.9463 12.9463" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="form__row">
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="infCommerc" class="form__field-label">Нанесение</label>
+                                            <input type="text" name="infCommerc" id="infCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="saleCommerc2" class="form__field-label">Скидка, %</label>
+                                            <input type="text" name="saleCommerc2" id="saleCommerc2"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="priceCommerc2" class="form__field-label">Цена, руб</label>
+                                            <input type="text" name="priceCommerc2" id="priceCommerc2"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <button type="button" class="form__field-del btn__samll">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.05373 12.9463L12.9463 7.05371" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                                <path d="M7.05373 7.05373L12.9463 12.9463" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                </form>
+
+                                <div class="commercial__product-controll">
+                                    <button class="commercial__add">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.83961 7.99997C3.83961 7.65479 4.11943 7.37497 4.46461 7.37497H7.37512V4.46443C7.37512 4.11925 7.65494 3.83943 8.00012 3.83943C8.3453 3.83943 8.62512 4.11925 8.62512 4.46443V7.37497H11.5357C11.8809 7.37497 12.1607 7.65479 12.1607 7.99997C12.1607 8.34515 11.8809 8.62497 11.5357 8.62497H8.62512V11.5355C8.62512 11.8807 8.3453 12.1605 8.00012 12.1605C7.65494 12.1605 7.37512 11.8807 7.37512 11.5355V8.62497H4.46461C4.11943 8.62497 3.83961 8.34515 3.83961 7.99997Z"
+                                                fill="black" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.0974 1.1406C6.67036 0.853035 9.32986 0.853035 11.9028 1.1406C13.4248 1.31071 14.6539 2.50957 14.8329 4.04038C15.1406 6.67114 15.1406 9.3288 14.8329 11.9596C14.6539 13.4904 13.4248 14.6892 11.9028 14.8593C9.32985 15.1469 6.67036 15.1469 4.0974 14.8593C2.57541 14.6892 1.34633 13.4904 1.16729 11.9596C0.8596 9.3288 0.8596 6.67114 1.16729 4.04038C1.34633 2.50957 2.57542 1.31071 4.0974 1.1406ZM11.764 2.38287C9.28329 2.10561 6.71693 2.10561 4.23624 2.38287C3.28255 2.48946 2.51917 3.24216 2.40883 4.18558C2.11242 6.71987 2.11242 9.28007 2.40883 11.8144C2.51917 12.7578 3.28255 13.5105 4.23624 13.6171C6.71693 13.8943 9.28329 13.8943 11.764 13.6171C12.7177 13.5105 13.481 12.7578 13.5914 11.8144C13.8878 9.28007 13.8878 6.71988 13.5914 4.18558C13.481 3.24216 12.7177 2.48946 11.764 2.38287Z"
+                                                fill="black" />
+                                        </svg>
+                                        Добавить нанесение
+                                    </button>
+                                    <button class="commercial__add">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.83961 7.99997C3.83961 7.65479 4.11943 7.37497 4.46461 7.37497H7.37512V4.46443C7.37512 4.11925 7.65494 3.83943 8.00012 3.83943C8.3453 3.83943 8.62512 4.11925 8.62512 4.46443V7.37497H11.5357C11.8809 7.37497 12.1607 7.65479 12.1607 7.99997C12.1607 8.34515 11.8809 8.62497 11.5357 8.62497H8.62512V11.5355C8.62512 11.8807 8.3453 12.1605 8.00012 12.1605C7.65494 12.1605 7.37512 11.8807 7.37512 11.5355V8.62497H4.46461C4.11943 8.62497 3.83961 8.34515 3.83961 7.99997Z"
+                                                fill="black" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.0974 1.1406C6.67036 0.853035 9.32986 0.853035 11.9028 1.1406C13.4248 1.31071 14.6539 2.50957 14.8329 4.04038C15.1406 6.67114 15.1406 9.3288 14.8329 11.9596C14.6539 13.4904 13.4248 14.6892 11.9028 14.8593C9.32985 15.1469 6.67036 15.1469 4.0974 14.8593C2.57541 14.6892 1.34633 13.4904 1.16729 11.9596C0.8596 9.3288 0.8596 6.67114 1.16729 4.04038C1.34633 2.50957 2.57542 1.31071 4.0974 1.1406ZM11.764 2.38287C9.28329 2.10561 6.71693 2.10561 4.23624 2.38287C3.28255 2.48946 2.51917 3.24216 2.40883 4.18558C2.11242 6.71987 2.11242 9.28007 2.40883 11.8144C2.51917 12.7578 3.28255 13.5105 4.23624 13.6171C6.71693 13.8943 9.28329 13.8943 11.764 13.6171C12.7177 13.5105 13.481 12.7578 13.5914 11.8144C13.8878 9.28007 13.8878 6.71988 13.5914 4.18558C13.481 3.24216 12.7177 2.48946 11.764 2.38287Z"
+                                                fill="black" />
+                                        </svg>
+                                        Добавить нанесение
+                                    </button>
+                                    <div id="total-g" class="total__price total__price-l commercial__product-total">
+                                        <div class="total__price-row">
+                                            <span class="total-name">Итог</span>
+                                            <span class="old-price">34039₽</span>
+                                        </div>
+                                        <div class="total__price-row">
+                                            <span class="price-prefix">за 2 позиции, 67 шт</span>
+                                            <h2 class="total-price">22209₽</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /commercial product -->
+                        <!-- commercial product -->
+                        <div class="commercial__product">
+
+                            <div class="commercial__product-preview">
+                                <div class="commercial__product-preview-img">
+                                    <img src="./assets/img/commerc-pr-2.png" alt="img">
+                                </div>
+                                <div class="commercial__preview-change">
+                                    <button class="btn__large">
+                                        <span>Заменить изображение</span>
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0.5 5C0.5 2.51472 2.51472 0.5 5 0.5H10.3333C12.0822 0.5 13.5 1.91777 13.5 3.66667C13.5 5.41557 12.0822 6.83333 10.3333 6.83333H4.90476C3.89224 6.83333 3.07143 6.01252 3.07143 5C3.07143 3.98748 3.89224 3.16667 4.90476 3.16667H10.1429C10.419 3.16667 10.6429 3.39052 10.6429 3.66667C10.6429 3.94281 10.419 4.16667 10.1429 4.16667H4.90476C4.44452 4.16667 4.07143 4.53976 4.07143 5C4.07143 5.46024 4.44452 5.83333 4.90476 5.83333H10.3333C11.53 5.83333 12.5 4.86328 12.5 3.66667C12.5 2.47005 11.53 1.5 10.3333 1.5H5C3.067 1.5 1.5 3.067 1.5 5C1.5 6.933 3.067 8.5 5 8.5H10.1429C10.419 8.5 10.6429 8.72386 10.6429 9C10.6429 9.27614 10.419 9.5 10.1429 9.5H5C2.51472 9.5 0.5 7.48528 0.5 5Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <div class="format__list">
+                                        <span class="format__list-format">.jpg</span>
+                                        <span class="format__list-format">.png</span>
+                                        <span class="format__list-format">.jpeg</span>
+                                        <span class="format__list-size">от 720x720</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="commercial__product-content">
+
+                                <form id="commercialProductForm" action="/" class="form">
+
+                                    <div class="form__row">
+
+                                        <div class="form__field">
+                                            <label for="productCommerc" class="form__field-label">Товар</label>
+                                            <input type="text" name="productCommerc" id="productCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__article">
+                                            <span>Арт. 1256.60.2</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form__row">
+
+                                        <div class="form__field">
+                                            <label for="descCommerc" class="form__field-label">Описание</label>
+                                            <textarea type="text" name="descCommerc" id="descCommerc"
+                                                class="form__field-textarea --textarea-l"></textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form__row">
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="circulCommerc" class="form__field-label">Тираж, шт</label>
+                                            <input type="text" name="circulCommerc" id="circulCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="saleCommerc" class="form__field-label">Скидка, %</label>
+                                            <input type="text" name="saleCommerc" id="saleCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="priceCommerc" class="form__field-label">Цена, руб</label>
+                                            <input type="text" name="priceCommerc" id="priceCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <button type="button" class="form__field-del btn__samll">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.05373 12.9463L12.9463 7.05371" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                                <path d="M7.05373 7.05373L12.9463 12.9463" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="form__row">
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="infCommerc" class="form__field-label">Нанесение</label>
+                                            <input type="text" name="infCommerc" id="infCommerc"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="saleCommerc2" class="form__field-label">Скидка, %</label>
+                                            <input type="text" name="saleCommerc2" id="saleCommerc2"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <div class="form__field form-col-3 form-col-3-btn">
+                                            <label for="priceCommerc2" class="form__field-label">Цена, руб</label>
+                                            <input type="text" name="priceCommerc2" id="priceCommerc2"
+                                                class="form__field-input">
+                                        </div>
+
+                                        <button type="button" class="form__field-del btn__samll">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.05373 12.9463L12.9463 7.05371" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                                <path d="M7.05373 7.05373L12.9463 12.9463" stroke="black"
+                                                    stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                </form>
+
+                                <div class="commercial__product-controll">
+                                    <button class="commercial__add">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.83961 7.99997C3.83961 7.65479 4.11943 7.37497 4.46461 7.37497H7.37512V4.46443C7.37512 4.11925 7.65494 3.83943 8.00012 3.83943C8.3453 3.83943 8.62512 4.11925 8.62512 4.46443V7.37497H11.5357C11.8809 7.37497 12.1607 7.65479 12.1607 7.99997C12.1607 8.34515 11.8809 8.62497 11.5357 8.62497H8.62512V11.5355C8.62512 11.8807 8.3453 12.1605 8.00012 12.1605C7.65494 12.1605 7.37512 11.8807 7.37512 11.5355V8.62497H4.46461C4.11943 8.62497 3.83961 8.34515 3.83961 7.99997Z"
+                                                fill="black" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.0974 1.1406C6.67036 0.853035 9.32986 0.853035 11.9028 1.1406C13.4248 1.31071 14.6539 2.50957 14.8329 4.04038C15.1406 6.67114 15.1406 9.3288 14.8329 11.9596C14.6539 13.4904 13.4248 14.6892 11.9028 14.8593C9.32985 15.1469 6.67036 15.1469 4.0974 14.8593C2.57541 14.6892 1.34633 13.4904 1.16729 11.9596C0.8596 9.3288 0.8596 6.67114 1.16729 4.04038C1.34633 2.50957 2.57542 1.31071 4.0974 1.1406ZM11.764 2.38287C9.28329 2.10561 6.71693 2.10561 4.23624 2.38287C3.28255 2.48946 2.51917 3.24216 2.40883 4.18558C2.11242 6.71987 2.11242 9.28007 2.40883 11.8144C2.51917 12.7578 3.28255 13.5105 4.23624 13.6171C6.71693 13.8943 9.28329 13.8943 11.764 13.6171C12.7177 13.5105 13.481 12.7578 13.5914 11.8144C13.8878 9.28007 13.8878 6.71988 13.5914 4.18558C13.481 3.24216 12.7177 2.48946 11.764 2.38287Z"
+                                                fill="black" />
+                                        </svg>
+                                        Добавить нанесение
+                                    </button>
+                                    <button class="commercial__add">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3.83961 7.99997C3.83961 7.65479 4.11943 7.37497 4.46461 7.37497H7.37512V4.46443C7.37512 4.11925 7.65494 3.83943 8.00012 3.83943C8.3453 3.83943 8.62512 4.11925 8.62512 4.46443V7.37497H11.5357C11.8809 7.37497 12.1607 7.65479 12.1607 7.99997C12.1607 8.34515 11.8809 8.62497 11.5357 8.62497H8.62512V11.5355C8.62512 11.8807 8.3453 12.1605 8.00012 12.1605C7.65494 12.1605 7.37512 11.8807 7.37512 11.5355V8.62497H4.46461C4.11943 8.62497 3.83961 8.34515 3.83961 7.99997Z"
+                                                fill="black" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.0974 1.1406C6.67036 0.853035 9.32986 0.853035 11.9028 1.1406C13.4248 1.31071 14.6539 2.50957 14.8329 4.04038C15.1406 6.67114 15.1406 9.3288 14.8329 11.9596C14.6539 13.4904 13.4248 14.6892 11.9028 14.8593C9.32985 15.1469 6.67036 15.1469 4.0974 14.8593C2.57541 14.6892 1.34633 13.4904 1.16729 11.9596C0.8596 9.3288 0.8596 6.67114 1.16729 4.04038C1.34633 2.50957 2.57542 1.31071 4.0974 1.1406ZM11.764 2.38287C9.28329 2.10561 6.71693 2.10561 4.23624 2.38287C3.28255 2.48946 2.51917 3.24216 2.40883 4.18558C2.11242 6.71987 2.11242 9.28007 2.40883 11.8144C2.51917 12.7578 3.28255 13.5105 4.23624 13.6171C6.71693 13.8943 9.28329 13.8943 11.764 13.6171C12.7177 13.5105 13.481 12.7578 13.5914 11.8144C13.8878 9.28007 13.8878 6.71988 13.5914 4.18558C13.481 3.24216 12.7177 2.48946 11.764 2.38287Z"
+                                                fill="black" />
+                                        </svg>
+                                        Добавить нанесение
+                                    </button>
+                                    <div id="total-g" class="total__price total__price-l commercial__product-total">
+                                        <div class="total__price-row">
+                                            <span class="total-name">Итог</span>
+                                            <span class="old-price">34039₽</span>
+                                        </div>
+                                        <div class="total__price-row">
+                                            <span class="price-prefix">за 2 позиции, 67 шт</span>
+                                            <h2 class="total-price">22209₽</h2>
+                                        </div>
+                                    </div>
+                                    <div id="total-o" class="total__price total__price-l commercial__product-total">
+                                        <div class="total__price-row">
+                                            <span class="total-name">Итог</span>
+                                            <span class="old-price">68078₽</span>
+                                        </div>
+                                        <div class="total__price-row">
+                                            <span class="price-prefix">20000 шт</span>
+                                            <h2 class="total-price">44418₽</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /commercial product -->
+                    </div>
+                    <!-- /commercial products -->
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- iclude form modal -->
+    {{> contacts-form-modal }}
+
+</main>

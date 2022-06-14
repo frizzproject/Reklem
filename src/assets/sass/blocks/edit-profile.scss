@@ -1,0 +1,52 @@
+.edit__section {
+    padding-top: 4.8rem;
+    padding-bottom: 9rem;
+}
+
+.edit__content {
+    margin-top: 12rem;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        margin-top: 6rem;
+    }
+}
+
+.edit__title {
+    color: #000000;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--h1-size);
+    line-height: 4.4rem;
+
+    /* MEDIA <= 580px */
+    @media only screen and (max-width: 580px) {
+        line-height: 2.8rem;
+    }
+}
+
+#editEntityForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 44.8rem;
+    margin: 0 auto;
+
+    #editSocField {
+        max-width: 25%;
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    #editNameField {
+        max-width: 75%;
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+}
+
+.edit__btns {
+    justify-content: center;
+    margin-top: 5rem;
+}
+

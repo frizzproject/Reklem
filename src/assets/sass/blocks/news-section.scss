@@ -1,0 +1,120 @@
+.news__section {
+    padding-top: 30rem;
+}
+
+.news__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__title {
+    color: #000000;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--h1-size);
+    line-height: 4.4rem;
+
+    /* MEDIA <= 580px */
+    @media only screen and (max-width: 580px) {
+        line-height: 2.8rem;
+    }
+}
+
+.news__records {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+    }
+
+    &-item {
+        flex: 0 1 48%;
+        margin-top: 7rem;
+        padding: 0 10px;
+
+        /* MEDIA <= 480px */
+        @media only screen and (max-width: 480px) {
+            flex: 0;
+        }
+    }
+}
+
+.news__records-item-title {
+    color: #000000;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--h3-size);
+}
+
+.news__records-item-text {
+    color: var(--grey-three);
+    margin-top: 1.2rem;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--text-normal-size);
+}
+
+.news__records-item-link {
+    display: inline-block;
+    margin-top: 2.8rem;
+}
+
+.records__time {
+    color: var(--green-one);
+    margin-right: 2.8rem;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: var(--text-normal-size);
+}
+
+.news__button {
+    text-align: center;
+    margin-top: 4.4rem;
+    max-width: 16rem;
+    align-self: flex-end;
+}
+
+.all__news {
+    padding-top: 4.8rem;
+}
+
+// BLOG
+
+.news__blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__sort-elements {
+    display: flex;
+    margin-bottom: 2rem;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        justify-content: space-between;
+    }
+}
+
+.news__blog {
+    margin-top: 10rem;
+}
+
+.news__sort-type.select {
+    max-width: 20rem;
+    margin-right: 2rem;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        justify-content: space-between;
+        width: 100%;
+        flex: 1;
+    }
+}
+

@@ -1,0 +1,16 @@
+#popupSelect {
+    max-width: 44.8rem;
+    max-height: 60.8rem;
+    width: 100%;
+
+    /* MEDIA <= 480px */
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+}
+
+.popup__content .product__sidebar {
+    max-width: 312px;
+    width: 100%;
+    margin: 0 auto;
+}

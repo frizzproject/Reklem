@@ -1,0 +1,48 @@
+.tab__body {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.tab__body._isActive {
+    visibility: visible;
+    height: 100%;
+    animation: tabShow 0.3s ease-in 0.1s 1 normal both;
+}
+
+@keyframes tabShow {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;  
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tabs__controller {
+    display: flex;
+    align-items: center;
+}
+
+.tab__switch {
+    padding: 2.2rem 3.2rem;
+    transition: var(--transition);
+
+    &:hover {
+        color: var(--green-one);
+    }
+}
+
+.tab__switch._isActive {
+    color: var(--green-one);
+}
+
+.drop__trigger {
+    &:hover {
+        color: var(--green-one);
+    }
+}
