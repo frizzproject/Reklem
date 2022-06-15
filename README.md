@@ -1,3 +1,1 @@
-# Reklem - online shop 
-**Descript:**
-*  Description for Reklem...
+# Reklem - online shop
